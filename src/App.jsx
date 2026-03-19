@@ -4,6 +4,7 @@ import SearchBox from './components/SearchBox'
 import WeatherCard from './components/WeatherCard'
 import getWeatherTheme from "./utils/getWeatherTheme";
 import weatherThemes from './config/weatherThemes';
+import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 
 const data = {
   cityName: "Delhi",
@@ -22,6 +23,7 @@ function App() {
   const themeName = getWeatherTheme(weatherInfo);
   console.log(themeName);
   const theme = weatherThemes[themeName] || weatherThemes.default;
+  // const theme = weatherThemes.storm;
   console.log(theme);
 
   let updateWeather = (result) => {
@@ -35,8 +37,16 @@ function App() {
         style={{
           "--bg-image": `url(${theme.image})`,
           "--gradient": theme.gradient,
+          "--text-color": theme.textColor,
+          "--glow-color": theme.glowColor,
         }}
       >
+        <h1>
+          Stormveil Engine 
+          <span className="app-icon">
+            <ThunderstormIcon />
+          </span>
+        </h1>
         <SearchBox updateWeather={updateWeather} />
         <WeatherCard weather={weatherInfo} theme={theme} />
       </div>
