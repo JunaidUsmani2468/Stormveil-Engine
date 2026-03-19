@@ -4,6 +4,7 @@ import SearchBox from './components/SearchBox'
 import WeatherCard from './components/WeatherCard'
 import getWeatherTheme from "./utils/getWeatherTheme";
 import weatherThemes from './config/weatherThemes';
+import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 
 const data = {
   cityName: "Delhi",
@@ -21,7 +22,8 @@ function App() {
 
   const themeName = getWeatherTheme(weatherInfo);
   console.log(themeName);
-  const theme = weatherThemes[themeName] || weatherThemes.default;
+  // const theme = weatherThemes[themeName] || weatherThemes.default;
+  const theme = weatherThemes.snow;
   console.log(theme);
 
   let updateWeather = (result) => {
@@ -37,6 +39,13 @@ function App() {
           "--gradient": theme.gradient,
         }}
       >
+        <h1>
+          Stormveil Engine 
+          <ThunderstormIcon sx={{
+            fontSize: '3rem',
+            filter: 'drop-shadow(0 0 10px rgba(0,0,0,0.8))',
+          }}/>
+        </h1>
         <SearchBox updateWeather={updateWeather} />
         <WeatherCard weather={weatherInfo} theme={theme} />
       </div>
