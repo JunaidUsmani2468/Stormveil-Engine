@@ -32,5 +32,5 @@ export default function getWeatherTheme(weather) {
     return "cloudy";
   }
 
-  return "clear";
+  return "default";
 }
