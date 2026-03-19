@@ -22,8 +22,8 @@ function App() {
 
   const themeName = getWeatherTheme(weatherInfo);
   console.log(themeName);
-  // const theme = weatherThemes[themeName] || weatherThemes.default;
-  const theme = weatherThemes.snow;
+  const theme = weatherThemes[themeName] || weatherThemes.default;
+  // const theme = weatherThemes.storm;
   console.log(theme);
 
   let updateWeather = (result) => {
@@ -37,14 +37,15 @@ function App() {
         style={{
           "--bg-image": `url(${theme.image})`,
           "--gradient": theme.gradient,
+          "--text-color": theme.textColor,
+          "--glow-color": theme.glowColor,
         }}
       >
         <h1>
           Stormveil Engine 
-          <ThunderstormIcon sx={{
-            fontSize: '3rem',
-            filter: 'drop-shadow(0 0 10px rgba(0,0,0,0.8))',
-          }}/>
+          <span className="app-icon">
+            <ThunderstormIcon />
+          </span>
         </h1>
         <SearchBox updateWeather={updateWeather} />
         <WeatherCard weather={weatherInfo} theme={theme} />

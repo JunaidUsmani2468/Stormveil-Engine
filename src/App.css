@@ -27,8 +27,15 @@ body::-webkit-scrollbar {
 
 .app h1 {
   font-size: 3rem;
-  color: white;
+  color: var(--text-color);
   text-shadow: 
     0 2px 5px rgba(0,0,0,0.7),
-    0 0 15px rgba(0,0,0,0.5);
+    0 0 15px var(--glow-color);
+}
+
+.app-icon svg {
+  font-size: 3rem;
+  color: var(--text-color);
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.6))
+          drop-shadow(0 0 15px var(--glow-color));
 }
