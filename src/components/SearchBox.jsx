@@ -43,7 +43,7 @@ export default function SearchBox({ updateWeather }) {
                     id="city"
                     label="City Name"
                     color="secondary"
-                    size="large"
+                    size="small"
                     value={city}
                     onChange={handleChange}
                     error={error}
@@ -53,7 +53,7 @@ export default function SearchBox({ updateWeather }) {
                 <Button
                     variant="contained"
                     color="secondary"
-                    size='large'
+                    size='small'
                     className='searchBtn'
                     endIcon={<SearchIcon/>}
                     type="submit"

@@ -12,8 +12,8 @@ const weatherThemes = {
     image: hotImg,
     gradient: "linear-gradient(rgba(255,140,0,0.5), rgba(255,69,0,0.5))",
     icon: 'sun',
-    textColor: "#7c1f13",
-    glowColor: "rgba(255,140,0,0.9)"
+    textColor: "#ffc1b9",
+    glowColor: "rgba(255, 140, 0, 0.93)"
   },
 
   cold: {
@@ -37,7 +37,7 @@ const weatherThemes = {
     gradient: "linear-gradient(rgba(200,220,255,0.8), rgba(148, 125, 211, 0.5))",
     icon: "snow",
     textColor: "#ffffff",
-    glowColor: "rgba(255, 213, 98, 0.7)"
+    glowColor: "rgba(255, 195, 31, 0.7)"
   },
 
   storm: {
@@ -45,7 +45,7 @@ const weatherThemes = {
     gradient: "linear-gradient(rgba(80, 15, 117, 0.6), rgba(0,0,0,0.7))",
     icon: "storm",
     textColor: "#e437ff",
-    glowColor: "rgba(255, 255, 255, 0.6)"
+    glowColor: "rgba(0, 0, 0, 1)"
   },
 
   fog: {

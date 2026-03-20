@@ -1,8 +1,56 @@
-.searchBtn {
-    padding: 15px 20px !important;
-    margin-left: 5px !important;
-}
-
 .searchBox {
     margin-bottom: 10px;
+
+    background: rgba(0, 0, 0, 0.35); /* dark glass */
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+
+    box-shadow: 
+        0 0 2px rgba(0, 0, 0, 0.6);
+
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SEARCH BAR STYLING */
+
+/* Input text color */
+.searchBar input {
+  color: var(--text-color);
+}
+
+/* Label color */
+.searchBar label {
+  color: var(--text-color) !important;
+}
+
+/* Border color */
+/* .searchBar .MuiOutlinedInput-root fieldset {
+  border-color: var(--text-color);
+} */
+
+/* Focus border */
+.searchBar .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: var(--glow-color);
+}
+
+/* SEARCH BTN STYLING */
+.searchBtn {
+  padding: 8px 11px !important;
+  margin-left: 5px !important;
+
+  background: var(--text-color) !important;
+  color: var(--glow-color) !important;
+
+  box-shadow: 0 0 10px var(--glow-color);
+}
+
+.searchBtn:hover {
+  filter: brightness(1.2);
 }

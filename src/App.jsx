@@ -22,8 +22,8 @@ function App() {
 
   const themeName = getWeatherTheme(weatherInfo);
   console.log(themeName);
-  const theme = weatherThemes[themeName];
-  // const theme = weatherThemes.storm;
+  // const theme = weatherThemes[themeName];
+  const theme = weatherThemes.storm;
   console.log(theme);
 
   let updateWeather = (result) => {
@@ -47,7 +47,7 @@ function App() {
             <ThunderstormIcon />
           </span>
         </h1>
-        <SearchBox updateWeather={updateWeather} />
+        <SearchBox updateWeather={updateWeather} theme={theme} />
         <WeatherCard weather={weatherInfo} theme={theme} />
       </div>
     </>
