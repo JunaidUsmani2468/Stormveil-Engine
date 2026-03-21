@@ -2,6 +2,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import './WeatherCard.css';
 
 // ICONS
 import AcUnitIcon from '@mui/icons-material/AcUnit';
@@ -30,28 +31,26 @@ export default function WeatherCard({weather, theme}) {
                 sx={{
                     width: 350,
                     boxShadow: '8px 8px 20px rgba(0,0,0,0.4)',
+                    position: 'relative',
                 }}
             >
-                <CardMedia
-                    sx={{ height: 200 }}
-                    image={theme.image}
-                    title="img"
-                />
+                <div style={{position: 'relative'}}>
+                    <CardMedia
+                        sx={{ height: 200 }}
+                        image={theme.image}
+                        title="img"
+                    />
+                    <div className="mediaOverlay"></div>
+                </div>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        {weather.cityName.toUpperCase()}&nbsp;
-                        {iconMap[theme.icon]}
+                        <h2 className='cityName'>{weather.cityName}</h2>
                     </Typography>
                     <Typography variant="body2" sx={{ color: 'text.secondary' }} component={"span"}>
-                        <p style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center'
-                        }}>
-                            WeatherInfo - {weather.condition}
-                            <img style={{height: '30px'}} src={weather.icon} alt="weather icon" />
-                        </p>
-                        <p>Temperature = {weather.temp}&deg;C</p>
+                        <div className='condition'><p>{weather.condition}</p></div>
+                        <img className='img' src={weather.icon} alt="weather icon" />
+                        {/* <p className='icon'>{iconMap[theme.icon]}</p> */}
+                        <p className='temp'>{weather.temp}&deg;C</p>
                         <p>Humidity = {weather.humidity}</p>
                         <p>The Weather feels like = {weather.feelsLike}&deg;C</p>
                         <p>Wind Speed = {weather.windSpeed} m/s</p>

@@ -1,0 +1,68 @@
+.mediaOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.4)
+  );
+}
+
+.cityName {
+    color: white;
+    position: absolute;
+    margin: 0;
+    top: 153px;
+    left: 10px;
+    font-size: 2.5rem;
+}
+
+.temp {
+    color: white;
+    position: absolute;
+    margin: 0;
+    top: 168px;
+    right: 5px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.icon svg {
+    color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    margin: 0;
+    top: 24px;
+    left: 98px;
+    font-size: 10rem;
+}
+
+.img {
+    position: absolute;
+    margin: 0;
+    top: -15px;
+    right: 0px;
+}
+
+.condition {
+    position: absolute;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    top: 58px;
+    width: 150px;
+    right: -22px;
+    color: white;
+}
+
+.condition p {
+    margin: 0;
+}
