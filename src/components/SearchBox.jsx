@@ -51,7 +51,7 @@ export default function SearchBox({ updateWeather }) {
                     focused
                 />
                 <Button
-                    variant="contained"
+                    variant="outlined"
                     color="secondary"
                     size='small'
                     className='searchBtn'

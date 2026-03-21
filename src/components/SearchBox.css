@@ -42,15 +42,9 @@
 
 /* SEARCH BTN STYLING */
 .searchBtn {
-  padding: 8px 11px !important;
+  padding: 7px 11px !important;
   margin-left: 5px !important;
 
-  background: var(--text-color) !important;
-  color: var(--glow-color) !important;
-
-  box-shadow: 0 0 10px var(--glow-color);
-}
-
-.searchBtn:hover {
-  filter: brightness(1.2);
+  color: var(--text-color) !important;
+  border: 2px solid var(--glow-color) !important;
 }
