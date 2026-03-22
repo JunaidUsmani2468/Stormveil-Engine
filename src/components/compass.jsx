@@ -9,7 +9,7 @@ export default function Compass({ deg }) {
                 <circle cx="50" cy="50" r="25" stroke="red" strokeWidth="5" fill="none" />
 
                 {/* directions */}
-                <text x="50" y="18" textAnchor="middle" fontSize="20" fontWeight="bold">N</text>
+                <text x="50" y="18" textAnchor="middle" fontSize="17" fontWeight="550">N</text>
                 <text x="50" y="94" textAnchor="middle" fontSize="17" fontWeight="550">S</text>
                 <text x="88" y="55.5" textAnchor="middle" fontSize="17" fontWeight="550">E</text>
                 <text x="11" y="55" textAnchor="middle" fontSize="15" fontWeight="550">W</text>

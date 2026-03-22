@@ -26,6 +26,15 @@ const iconMap = {
 };
 
 export default function WeatherCard({weather, theme}) {
+
+    let mood;
+
+    if (weather.temp <= -5) mood = "extremely cold 🧊";
+    else if (weather.temp <= 10) mood = "quite cold ❄️";
+    else if (weather.temp <= 25) mood = "pleasant 🌿";
+    else if (weather.temp <= 35) mood = "warm ☀️";
+    else mood = "very hot 🔥";
+
     return (
         <div>
             <Card
@@ -47,18 +56,25 @@ export default function WeatherCard({weather, theme}) {
                     <Typography gutterBottom variant="h5" component="div">
                         <h2 className='cityName'>{weather.cityName}</h2>
                     </Typography>
-                    <Typography variant="body2" sx={{ color: 'text.secondary' }} component={"span"}>
+                    <Typography variant="body2" sx={{ color: 'black' }} component={"span"}>
                         <div className='condition'>
                             <img src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`} alt="weather icon" />
                             <p>{weather.condition}</p>
                         </div>
-                        {/* <p className='icon'>{iconMap[theme.icon]}</p> */}
                         <p className='temp'>{weather.temp}&deg;C</p>
-                        <p>Humidity = {weather.humidity}</p>
-                        <p>The Weather feels like = {weather.feelsLike}&deg;C</p>
-                        <p>Wind Speed = {weather.windSpeed} m/s</p>
-                        <p>Wind Direction = {weather.windDir}</p>
-                        <Compass deg={weather.windDeg} />
+                        <p className='para'>
+                            {weather.cityName} feels {mood} right now with {weather.condition}.
+                            The temperature is {weather.temp}°C (feels like {weather.feelsLike}°C).
+                        </p>
+                        {/* <p className='icon'>{iconMap[theme.icon]}</p> */}
+                        <p>Humidity : {weather.humidity}%</p>
+                        <div className='wind'>
+                            <div>
+                                <p>Wind Speed : {weather.windSpeed} m/s</p>
+                                <p>Wind Direction : {weather.windDir}</p>
+                            </div>
+                            <Compass deg={weather.windDeg} />
+                        </div>
                     </Typography>
                 </CardContent>
             </Card>

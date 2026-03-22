@@ -17,7 +17,7 @@ export async function getWeather(city) {
     };
 
     const getWindDirection = (deg) => {
-        const directions = ["N","NE","E","SE","S","SW","W","NW"];
+        const directions = ["North","North/East","East","South/East","South","South/West","West","North/West"];
         return directions[Math.round(deg / 45) % 8];
     };
 
