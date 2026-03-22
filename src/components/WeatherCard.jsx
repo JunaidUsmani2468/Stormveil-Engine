@@ -47,8 +47,10 @@ export default function WeatherCard({weather, theme}) {
                         <h2 className='cityName'>{weather.cityName}</h2>
                     </Typography>
                     <Typography variant="body2" sx={{ color: 'text.secondary' }} component={"span"}>
-                        <div className='condition'><p>{weather.condition}</p></div>
-                        <img className='img' src={weather.icon} alt="weather icon" />
+                        <div className='condition'>
+                            <img src={weather.icon} alt="weather icon" />
+                            <p>{weather.condition}</p>
+                        </div>
                         {/* <p className='icon'>{iconMap[theme.icon]}</p> */}
                         <p className='temp'>{weather.temp}&deg;C</p>
                         <p>Humidity = {weather.humidity}</p>
