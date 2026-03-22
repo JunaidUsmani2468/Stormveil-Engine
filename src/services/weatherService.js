@@ -9,17 +9,39 @@ export async function getWeather(city) {
         throw new Error("City not found");
     }
 
-    console.log(jsonData);
+    const formatTime = (timestamp) => {
+        return new Date(timestamp * 1000).toLocaleTimeString([], {
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+    };
+
+    const getWindDirection = (deg) => {
+        const directions = ["N","NE","E","SE","S","SW","W","NW"];
+        return directions[Math.round(deg / 45) % 8];
+    };
 
     const result = {
         cityName: jsonData.name,
+        country: jsonData.sys.country,
+
         temp: Math.round(jsonData.main.temp),
-        humidity: jsonData.main.humidity,
         feelsLike: Math.round(jsonData.main.feels_like),
+
+        humidity: jsonData.main.humidity,
+        pressure: jsonData.main.pressure,
+        
         condition: jsonData.weather[0].description,
+        icon: jsonData.weather[0].icon,
+
         windSpeed: jsonData.wind.speed,
         windDeg: jsonData.wind.deg,
-        icon: jsonData.weather[0].icon,
+        windDir: getWindDirection(jsonData.wind.deg),
+
+        sunrise: formatTime(jsonData.sys.sunrise),
+        sunset: formatTime(jsonData.sys.sunset),
+
+        isDay: jsonData.weather[0].icon.includes("d"),
     }
 
     return result;
