@@ -1,0 +1,10 @@
+.compass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.needle {
+  transform-origin: 50% 50%;
+  transition: transform 5s ease-in-out;
+}

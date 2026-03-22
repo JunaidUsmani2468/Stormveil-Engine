@@ -2,6 +2,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import Compass from './compass';
 import './WeatherCard.css';
 
 // ICONS
@@ -56,7 +57,8 @@ export default function WeatherCard({weather, theme}) {
                         <p>Humidity = {weather.humidity}</p>
                         <p>The Weather feels like = {weather.feelsLike}&deg;C</p>
                         <p>Wind Speed = {weather.windSpeed} m/s</p>
-                        <p>Wind Direction = {weather.windDeg}</p>
+                        <p>Wind Direction = {weather.windDir}</p>
+                        <Compass deg={weather.windDeg} />
                     </Typography>
                 </CardContent>
             </Card>
