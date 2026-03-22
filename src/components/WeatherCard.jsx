@@ -48,7 +48,7 @@ export default function WeatherCard({weather, theme}) {
                     </Typography>
                     <Typography variant="body2" sx={{ color: 'text.secondary' }} component={"span"}>
                         <div className='condition'>
-                            <img src={weather.icon} alt="weather icon" />
+                            <img src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`} alt="weather icon" />
                             <p>{weather.condition}</p>
                         </div>
                         {/* <p className='icon'>{iconMap[theme.icon]}</p> */}

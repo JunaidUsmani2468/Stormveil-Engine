@@ -11,7 +11,7 @@ const data = {
   condition: "clear sky",
   feelsLike: 29,
   humidity: 19,
-  icon: "https://openweathermap.org/img/wn/02d@2x.png",
+  icon: "02d",
   temp: 31,
   windDeg: 168,
   windSpeed: 3.99,

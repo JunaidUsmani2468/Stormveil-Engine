@@ -9,7 +9,7 @@ export async function getWeather(city) {
         throw new Error("City not found");
     }
 
-    const icon = jsonData.weather[0].icon;
+    console.log(jsonData);
 
     const result = {
         cityName: jsonData.name,
@@ -19,7 +19,7 @@ export async function getWeather(city) {
         condition: jsonData.weather[0].description,
         windSpeed: jsonData.wind.speed,
         windDeg: jsonData.wind.deg,
-        icon: `https://openweathermap.org/img/wn/${icon}@2x.png`,
+        icon: jsonData.weather[0].icon,
     }
 
     return result;
