@@ -31,9 +31,14 @@
 }
 
 /* Border color */
-/* .searchBar .MuiOutlinedInput-root fieldset {
-  border-color: var(--text-color);
-} */
+.searchBar .MuiOutlinedInput-root fieldset {
+  border: 2px solid var(--glow-color);
+}
+
+/* Hover border */
+.searchBar:hover .MuiOutlinedInput-root fieldset {
+  border-color: var(--glow-color);
+}
 
 /* Focus border */
 .searchBar .MuiOutlinedInput-root.Mui-focused fieldset {

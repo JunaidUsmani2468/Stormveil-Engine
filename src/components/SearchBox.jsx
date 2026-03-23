@@ -42,17 +42,14 @@ export default function SearchBox({ updateWeather }) {
                     className= "searchBar"
                     id="city"
                     label="City Name"
-                    color="secondary"
                     size="small"
                     value={city}
                     onChange={handleChange}
                     error={error}
                     helperText={error ? "Please enter a valid city name" : ""}
-                    focused
                 />
                 <Button
                     variant="outlined"
-                    color="secondary"
                     size='small'
                     className='searchBtn'
                     endIcon={<SearchIcon/>}
