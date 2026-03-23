@@ -9,10 +9,25 @@ export async function getWeather(city) {
         throw new Error("City not found");
     }
 
+    console.log(jsonData);
+
     function formatTime(timestamp, timezone) {
         const date = new Date((timestamp + timezone) * 1000);
         return date.toUTCString().slice(17, 22); // HH:MM format
     }
+
+    const getLocalTime = (timezoneOffset) => {
+        const now = new Date();
+        const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+        const time = new Date(utc + (timezoneOffset * 1000));
+
+        const hours = time.getHours();
+        const minutes = time.getMinutes();
+
+        const cityTime = hours + ':' + minutes;
+
+        return cityTime;
+    };
 
     const getWindDirection = (deg) => {
         const directions = ["North","North/East","East","South/East","South","South/West","West","North/West"];
@@ -36,8 +51,10 @@ export async function getWeather(city) {
         windDeg: jsonData.wind.deg,
         windDir: getWindDirection(jsonData.wind.deg),
 
-        sunrise: formatTime(jsonData.sys.sunrise, jsonData.timezone),
-        sunset: formatTime(jsonData.sys.sunset, jsonData.timezone),
+        sunrise: { formatted: formatTime(jsonData.sys.sunrise, jsonData.timezone), raw: jsonData.sys.sunrise },
+        sunset: { formatted: formatTime(jsonData.sys.sunset, jsonData.timezone), raw: jsonData.sys.sunset },
+        cityTime: { formatted: getLocalTime(jsonData.timezone), raw: Date.now() },
+        timezone: jsonData.timezone,
 
         isDay: jsonData.weather[0].icon.includes("d"),
     }

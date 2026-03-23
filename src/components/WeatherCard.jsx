@@ -63,7 +63,7 @@ export default function WeatherCard({weather, theme}) {
                         </p>
                         <div className='time'>
                             <p>Time: {weather.isDay ? "Day 🌞" : "Night 🌙"}</p>
-                            <p>Sunrise: {weather.sunrise} • Sunset: {weather.sunset}</p>
+                            <p>Sunrise: {weather.sunrise.formatted} • Sunset: {weather.sunset.formatted} • CityTime: {weather.cityTime.formatted}</p>
                         </div>
                         {/* <p>Pressure: {weather.pressure} hPa</p> */}
                         {/* <p>{weatherVisual[theme.icon].icon}</p> */}
