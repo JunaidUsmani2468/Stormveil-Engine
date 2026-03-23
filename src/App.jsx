@@ -10,6 +10,7 @@ const data = {
   country: "IN",
   cityName: "Delhi",
   condition: "clear sky",
+  isDay: true,
   feelsLike: 29,
   humidity: 19,
   icon: "02d",

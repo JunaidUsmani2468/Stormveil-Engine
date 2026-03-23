@@ -81,3 +81,11 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+.time {
+    margin: 10px 0;
+}
+
+.time p {
+    margin: 0;
+}

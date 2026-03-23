@@ -57,13 +57,16 @@ export default function WeatherCard({weather, theme}) {
                         </div>
                         <p className='temp'>{weather.temp}&deg;C</p>
                         <p className='para'>
-                            In {weather.cityName}, {regionNames.of(weather.country)}, the weather is {weatherVisual[theme.icon].text} with {weather.condition}.  
-                            Temperature is {weather.temp}°C (feels like {weather.feelsLike}°C).
+                            In {weather.cityName}{weather.country ? `, ${regionNames.of(weather.country)}` : ''}, 
+                            the weather is {weatherVisual[theme.icon].text} with {weather.condition}.
+                            It feels like {weather.feelsLike}°C with humidity at {weather.humidity}%.
                         </p>
-                        <p>Humidity : {weather.humidity}%</p>
-                        <p>Time: {weather.isDay ? "Day 🌞" : "Night 🌙"}</p>
-                        <p>Sunrise: {weather.sunrise} • Sunset: {weather.sunset}</p>
-                        <p>Pressure: {weather.pressure} hPa</p>
+                        <div className='time'>
+                            <p>Time: {weather.isDay ? "Day 🌞" : "Night 🌙"}</p>
+                            <p>Sunrise: {weather.sunrise} • Sunset: {weather.sunset}</p>
+                        </div>
+                        {/* <p>Pressure: {weather.pressure} hPa</p> */}
+                        {/* <p>{weatherVisual[theme.icon].icon}</p> */}
                         <div className='wind'>
                             <div>
                                 <p>Wind Speed : {weather.windSpeed} m/s</p>
