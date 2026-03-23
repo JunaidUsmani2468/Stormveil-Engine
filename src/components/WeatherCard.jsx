@@ -14,27 +14,18 @@ import CloudIcon from "@mui/icons-material/Cloud";
 import WaterDropIcon from '@mui/icons-material/WaterDrop';
 import BlurOnIcon from "@mui/icons-material/BlurOn";
 
-const iconMap = {
-  sun: <WbSunnyIcon />,
-  cold: <AcUnitIcon />,
-  snow: <SevereColdIcon />,
-  rain: <WaterDropIcon />,
-  storm: <ThunderstormIcon />,
-  fog: <BlurOnIcon />,
-  cloudy: <CloudIcon />,
-  default: <WbSunnyIcon />,
+const weatherVisual = {
+  sun: { icon: <WbSunnyIcon />, text: "bright and sunny" },
+  cold: { icon: <AcUnitIcon />, text: "cold and crisp" },
+  snow: { icon: <SevereColdIcon />, text: "snowy and freezing" },
+  rain: { icon: <WaterDropIcon />, text: "cool and rainy" },
+  storm: { icon: <ThunderstormIcon />, text: "stormy and intense" },
+  fog: { icon: <BlurOnIcon />, text: "foggy and low visibility" },
+  cloudy: { icon: <CloudIcon />, text: "cloudy and calm" },
+  default: { icon: <WbSunnyIcon />, text: "clear and pleasant" },
 };
 
 export default function WeatherCard({weather, theme}) {
-
-    let mood;
-
-    if (weather.temp <= -5) mood = "extremely cold 🧊";
-    else if (weather.temp <= 10) mood = "quite cold ❄️";
-    else if (weather.temp <= 25) mood = "pleasant 🌿";
-    else if (weather.temp <= 35) mood = "warm ☀️";
-    else mood = "very hot 🔥";
-
     return (
         <div>
             <Card
@@ -63,10 +54,9 @@ export default function WeatherCard({weather, theme}) {
                         </div>
                         <p className='temp'>{weather.temp}&deg;C</p>
                         <p className='para'>
-                            {weather.cityName} feels {mood} right now with {weather.condition}.
+                            {weather.cityName} feels {weatherVisual[theme.icon].text} right now with {weather.condition}.
                             The temperature is {weather.temp}°C (feels like {weather.feelsLike}°C).
                         </p>
-                        {/* <p className='icon'>{iconMap[theme.icon]}</p> */}
                         <p>Humidity : {weather.humidity}%</p>
                         <div className='wind'>
                             <div>
