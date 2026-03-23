@@ -9,12 +9,10 @@ export async function getWeather(city) {
         throw new Error("City not found");
     }
 
-    const formatTime = (timestamp) => {
-        return new Date(timestamp * 1000).toLocaleTimeString([], {
-            hour: '2-digit',
-            minute: '2-digit'
-        });
-    };
+    function formatTime(timestamp, timezone) {
+        const date = new Date((timestamp + timezone) * 1000);
+        return date.toUTCString().slice(17, 22); // HH:MM format
+    }
 
     const getWindDirection = (deg) => {
         const directions = ["North","North/East","East","South/East","South","South/West","West","North/West"];
@@ -38,8 +36,8 @@ export async function getWeather(city) {
         windDeg: jsonData.wind.deg,
         windDir: getWindDirection(jsonData.wind.deg),
 
-        sunrise: formatTime(jsonData.sys.sunrise),
-        sunset: formatTime(jsonData.sys.sunset),
+        sunrise: formatTime(jsonData.sys.sunrise, jsonData.timezone),
+        sunset: formatTime(jsonData.sys.sunset, jsonData.timezone),
 
         isDay: jsonData.weather[0].icon.includes("d"),
     }

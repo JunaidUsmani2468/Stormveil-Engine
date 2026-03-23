@@ -7,6 +7,7 @@ import weatherThemes from './config/weatherThemes';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 
 const data = {
+  country: "IN",
   cityName: "Delhi",
   condition: "clear sky",
   feelsLike: 29,

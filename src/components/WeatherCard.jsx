@@ -26,6 +26,9 @@ const weatherVisual = {
 };
 
 export default function WeatherCard({weather, theme}) {
+
+    const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+
     return (
         <div>
             <Card
@@ -54,10 +57,13 @@ export default function WeatherCard({weather, theme}) {
                         </div>
                         <p className='temp'>{weather.temp}&deg;C</p>
                         <p className='para'>
-                            {weather.cityName} feels {weatherVisual[theme.icon].text} right now with {weather.condition}.
-                            The temperature is {weather.temp}°C (feels like {weather.feelsLike}°C).
+                            In {weather.cityName}, {regionNames.of(weather.country)}, the weather is {weatherVisual[theme.icon].text} with {weather.condition}.  
+                            Temperature is {weather.temp}°C (feels like {weather.feelsLike}°C).
                         </p>
                         <p>Humidity : {weather.humidity}%</p>
+                        <p>Time: {weather.isDay ? "Day 🌞" : "Night 🌙"}</p>
+                        <p>Sunrise: {weather.sunrise} • Sunset: {weather.sunset}</p>
+                        <p>Pressure: {weather.pressure} hPa</p>
                         <div className='wind'>
                             <div>
                                 <p>Wind Speed : {weather.windSpeed} m/s</p>
