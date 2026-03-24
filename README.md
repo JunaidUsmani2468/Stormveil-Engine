@@ -6,9 +6,7 @@ It adapts background, gradients, and UI elements based on live conditions, creat
 
 Built with React, Material UI, and OpenWeather API.
 
----
-
-🚧 **Work in Progress** 🚧
+## 🚧 Work in Progress 🚧
 
 This project is currently under development.
 New features are being added, improved, and sometimes… unexpectedly broken 😅
@@ -17,8 +15,6 @@ If something looks strange, don’t worry —
 👉 it’s just part of the building phase.
 
 Stay tuned as Stormveil Engine evolves 💪🏻
-
----
 
 ## Tech Stack
 
