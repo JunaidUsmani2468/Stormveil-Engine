@@ -61,3 +61,23 @@
     top: -40px;
     transform: translateX(-35%);
 }
+
+.sun-label {
+  position: absolute;
+  top: 25px;
+  font-size: 0.7rem;
+  color: black;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.sun-label.current {
+  top: -46px;
+  font-weight: bold;
+  transform: translateX(-160%);
+}
+
+.sun-marker,
+.sun-indicator {
+  transition: left 3s ease-in-out;
+}

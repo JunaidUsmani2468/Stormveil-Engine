@@ -75,12 +75,11 @@ export default function WeatherCard({weather, theme}) {
                             sunrisePercent={sunData.sunrisePercent}
                             sunsetPercent={sunData.sunsetPercent}
                             currentPercent={sunData.currentPercent}
-                            isDay={weather.isDay}
+                            isDay={sunData.isDayProgress}
+                            sunrise={weather.sunrise.formatted}
+                            sunset={weather.sunset.formatted}
+                            cityTime={weather.cityTime.formatted}
                         />
-                        {/* <div className='time'>
-                            <p>Time: {weather.isDay ? "Day 🌞" : "Night 🌙"}</p>
-                            <p>Sunrise: {weather.sunrise.formatted} • Sunset: {weather.sunset.formatted} • CityTime: {weather.cityTime.formatted}</p>
-                        </div> */}
                         {/* <p>Pressure: {weather.pressure} hPa</p> */}
                         {/* <p>{weatherVisual[theme.icon].icon}</p> */}
                         <div className='wind'>
