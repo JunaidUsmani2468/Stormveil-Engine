@@ -3,6 +3,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Compass from './compass';
+import { getSunProgress } from "../utils/sunProgress";
 import './WeatherCard.css';
 
 // ICONS
@@ -28,6 +29,14 @@ const weatherVisual = {
 export default function WeatherCard({weather, theme}) {
 
     const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+
+    const sunData = getSunProgress({
+        sunrise: weather.sunrise.raw,
+        sunset: weather.sunset.raw,
+        timezone: weather.timezone
+    });
+
+    console.log(sunData);
 
     return (
         <div>

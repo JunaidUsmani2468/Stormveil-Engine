@@ -51,8 +51,8 @@ export async function getWeather(city) {
         windDeg: jsonData.wind.deg,
         windDir: getWindDirection(jsonData.wind.deg),
 
-        sunrise: { formatted: formatTime(jsonData.sys.sunrise, jsonData.timezone), raw: jsonData.sys.sunrise },
-        sunset: { formatted: formatTime(jsonData.sys.sunset, jsonData.timezone), raw: jsonData.sys.sunset },
+        sunrise: { formatted: formatTime(jsonData.sys.sunrise, jsonData.timezone), raw: jsonData.sys.sunrise * 1000},
+        sunset: { formatted: formatTime(jsonData.sys.sunset, jsonData.timezone), raw: jsonData.sys.sunset * 1000 },
         cityTime: { formatted: getLocalTime(jsonData.timezone), raw: Date.now() },
         timezone: jsonData.timezone,
 
