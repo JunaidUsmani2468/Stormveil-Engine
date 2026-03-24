@@ -1,19 +1,10 @@
 # Stormveil Engine ⛈️
 
-Stormveil Engine ⛈️ is a dynamic weather web app that transforms real-time weather data into immersive visual experiences.
+🚧 **Work in Progress** 🚧
 
-It adapts background, gradients, and UI elements based on live conditions, creating a unique atmosphere for every city.
+This project is currently under development.
+Things may break, shift, or randomly look cool 😎
 
-Built with React, Material UI, and OpenWeather API.
+We're actively building features and improving the experience.
 
-## Tech Stack
-
-- React
-- Material UI
-- OpenWeather API
-
-## Features
-
-- Dynamic theme system
-- Weather-based UI transformation
-- Real-time data fetching
+👉 Proceed with curiosity (and a little patience 😅)
