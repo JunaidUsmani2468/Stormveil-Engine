@@ -4,6 +4,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Compass from './compass';
 import { getSunProgress } from "../utils/sunProgress";
+import SunProgress from "./SunProgress";
 import './WeatherCard.css';
 
 // ICONS
@@ -70,10 +71,16 @@ export default function WeatherCard({weather, theme}) {
                             the weather is {weatherVisual[theme.icon].text} with {weather.condition}.
                             It feels like {weather.feelsLike}°C with humidity at {weather.humidity}%.
                         </p>
-                        <div className='time'>
+                        <SunProgress
+                            sunrisePercent={sunData.sunrisePercent}
+                            sunsetPercent={sunData.sunsetPercent}
+                            currentPercent={sunData.currentPercent}
+                            isDay={weather.isDay}
+                        />
+                        {/* <div className='time'>
                             <p>Time: {weather.isDay ? "Day 🌞" : "Night 🌙"}</p>
                             <p>Sunrise: {weather.sunrise.formatted} • Sunset: {weather.sunset.formatted} • CityTime: {weather.cityTime.formatted}</p>
-                        </div>
+                        </div> */}
                         {/* <p>Pressure: {weather.pressure} hPa</p> */}
                         {/* <p>{weatherVisual[theme.icon].icon}</p> */}
                         <div className='wind'>

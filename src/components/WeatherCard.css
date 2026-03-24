@@ -77,8 +77,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid rgb(170, 170, 170);
-    padding: 10px;
     border-radius: 5px;
 }
 

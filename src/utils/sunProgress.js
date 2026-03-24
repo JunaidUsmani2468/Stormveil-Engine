@@ -23,8 +23,6 @@ export function getSunProgress({ sunrise, sunset, timezone }) {
   return {
     sunrisePercent: toPercent(localSunrise),
     sunsetPercent: toPercent(localSunset),
-    currentPercent: (current / total) * 100,
-    isDayProgress:
-      localNow >= localSunrise && localNow <= localSunset,
+    currentPercent: (current / total) * 100
   };
 }
