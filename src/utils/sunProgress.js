@@ -1,21 +1,24 @@
+const ONE_DAY = 24 * 60 * 60 * 1000;
+
 export function getSunProgress({ sunrise, sunset, timezone }) {
   const nowUtc = Date.now();
 
-  // current time in city's timezone
   const localNow = nowUtc + (timezone * 1000);
 
-  // shift sunrise/sunset to same timeline
-  const localSunrise = sunrise + (timezone * 1000);
-  const localSunset = sunset + (timezone * 1000);
+  let localSunrise = sunrise + (timezone * 1000);
+  let localSunset = sunset + (timezone * 1000);
 
-  // 🔥 FIX: calculate start of day using math (not Date.setHours)
-  const dayStart =
-    Math.floor(localNow / (24 * 60 * 60 * 1000)) *
-    (24 * 60 * 60 * 1000);
+  const dayStart = Math.floor(localNow / ONE_DAY) * ONE_DAY;
+  const dayEnd = dayStart + ONE_DAY;
 
-  const dayEnd = dayStart + (24 * 60 * 60 * 1000);
+  // 🔥 FIX: normalize sunrise/sunset into same day window
+  if (localSunrise < dayStart) localSunrise += ONE_DAY;
+  if (localSunrise > dayEnd) localSunrise -= ONE_DAY;
 
-  const total = dayEnd - dayStart;
+  if (localSunset < dayStart) localSunset += ONE_DAY;
+  if (localSunset > dayEnd) localSunset -= ONE_DAY;
+
+  const total = ONE_DAY;
   const current = localNow - dayStart;
 
   const toPercent = (value) => ((value - dayStart) / total) * 100;
