@@ -32,7 +32,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: black;
+  background-color: var(--glow-color);
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 

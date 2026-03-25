@@ -6,7 +6,7 @@ export default function Compass({ deg }) {
             <svg viewBox="0 0 100 100" width="80" height="80">
                 
                 {/* outer circle */}
-                <circle cx="50" cy="50" r="25" stroke="red" strokeWidth="5" fill="none" />
+                <circle cx="50" cy="50" r="25" stroke="currentColor" strokeWidth="5" fill="none" />
 
                 {/* directions */}
                 <text x="50" y="18" textAnchor="middle" fontSize="17" fontWeight="550">N</text>
@@ -20,10 +20,10 @@ export default function Compass({ deg }) {
                     style={{ transform: `rotate(${deg}deg)` }}
                 >
                     {/* arrow head (direction) */}
-                    <polygon points="50,30 54,50 46,50" fill="red" />
+                    <polygon points="50,30 54,50 46,50" fill="currentColor" />
 
                     {/* tail */}
-                    <polygon points="50,70 52,50 48,50" fill="red" />
+                    <polygon points="50,70 52,50 48,50" fill="currentColor" />
 
                     {/* center cube */}
                     <rect 
@@ -31,7 +31,7 @@ export default function Compass({ deg }) {
                         y="45" 
                         width="10" 
                         height="10" 
-                        fill="red"
+                        fill="currentColor"
                         transform="rotate(45 50 50)"
                     />
                 </g>

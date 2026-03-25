@@ -22,7 +22,6 @@
 }
 
 .cityName {
-    color: white;
     position: absolute;
     margin: 0;
     top: 153px;
@@ -31,22 +30,12 @@
 }
 
 .temp {
-    color: white;
     position: absolute;
     margin: 0;
     top: 160px;
     right: 5px;
     font-weight: 700;
     font-size: 2rem;
-}
-
-.icon svg {
-    color: rgba(255, 255, 255, 0.4);
-    position: absolute;
-    margin: 0;
-    top: 24px;
-    left: 98px;
-    font-size: 10rem;
 }
 
 .condition {
@@ -62,11 +51,28 @@
     right: 0px;
 }
 
+.cityName,
+.temp,
+.condition {
+    color: white;
+}
+
+
+.icon svg {
+    color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    margin: 0;
+    top: 24px;
+    left: 98px;
+    font-size: 10rem;
+}
+
 .condition p {
     text-align: center;
     position: absolute;
+    font-weight: 700;
+    font-size: .7rem;
     top: 75px;
-    color: white;
 }
 
 .condition p {
@@ -75,7 +81,22 @@
 
 .wind {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
+}
+
+.wind div {
+    font-size: .7rem;
+    font-weight: 550;
+    width: 100px;
+    text-align: center;
+}
+
+.wind div p {
+    margin: 0;
+}
+
+.wind div p:last-child {
+    font-size: .9rem;
+    font-weight: 700;
 }

@@ -20,7 +20,7 @@ const data = {
   temp: 31,
   windDeg: 168,
   windSpeed: 3.99,
-  windDir: 'South',
+  windDir: 'S',
 }
 
 function App() {
