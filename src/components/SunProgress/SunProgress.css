@@ -18,10 +18,13 @@
 }
 
 /* markers (sunrise/sunset) */
-.sun-marker {
+.sun-marker-wrapper {
   position: absolute;
-  top: -6px;
-  
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.sun-marker {
   height: 20px;
   width: 15px;
 
@@ -31,17 +34,15 @@
 
   background-color: black;
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-  transform: translateX(-50%);
-  z-index: 3;
 }
 
 .sun-marker span {
-    height: 15px;
-    width: 10px;
-    display: flex;
-    display: inline-block;
-    background-color: var(--text-color);
-    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  height: 15px;
+  width: 10px;
+  display: flex;
+  display: inline-block;
+  background-color: var(--text-color);
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 
 /* moving sun */
@@ -56,24 +57,25 @@
 }
 
 .sun-indicator svg {
-    position: relative;
-    font-size: 2rem;
-    top: -40px;
-    transform: translateX(-35%);
+  position: relative;
+  font-size: 2rem;
+  top: -40px;
+  transform: translateX(-35%);
 }
 
 .sun-label {
   position: absolute;
-  top: 25px;
+  top: 15px;
   font-size: 0.7rem;
   color: black;
+  font-weight: 600;
   white-space: nowrap;
-  transform: translateX(-50%);
+  transform: translateX(-25%);
 }
 
 .sun-label.current {
   top: -46px;
-  font-weight: bold;
+  font-weight: bolder;
   transform: translateX(-160%);
 }
 

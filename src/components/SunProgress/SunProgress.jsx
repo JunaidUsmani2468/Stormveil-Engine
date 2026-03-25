@@ -4,13 +4,13 @@ import BedtimeIcon from '@mui/icons-material/Bedtime';
 
 
 function SunProgress({
-    sunrisePercent,
-    sunsetPercent,
-    currentPercent,
-    isDay,
-    sunrise,
-    sunset,
-    cityTime
+  sunrisePercent,
+  sunsetPercent,
+  currentPercent,
+  isDay,
+  sunrise,
+  sunset,
+  cityTime
 }) {
   console.log(cityTime, sunrise, sunset);
   
@@ -20,20 +20,26 @@ function SunProgress({
         
         {/* Sunrise marker */}
         <div
-          className="sun-marker"
+          className="sun-marker-wrapper"
           style={{ left: `${sunrisePercent}%` }}
         >
+          <div className="sun-marker">
             <span/>
-            <p className="sun-label">{sunrise}</p>
+          </div>
+
+          <p className="sun-label">{sunrise}</p>
         </div>
 
         {/* Sunset marker */}
         <div
-          className="sun-marker"
+          className="sun-marker-wrapper"
           style={{ left: `${sunsetPercent}%` }}
         >
+          <div className="sun-marker">
             <span/>
-            <p className="sun-label">{sunset}</p>
+          </div>
+          
+          <p className="sun-label">{sunset}</p>
         </div>
 
         {/* Moving Sun */}
@@ -41,8 +47,8 @@ function SunProgress({
           className="sun-indicator"
           style={{ left: `${currentPercent}%` }}
         >
-            {isDay ? <SunnyIcon style={{color: 'gold'}} /> : <BedtimeIcon style={{color: 'rgb(0, 195, 255)'}} />}
-            <p className="sun-label current">{cityTime}</p>
+          {isDay ? <SunnyIcon style={{color: 'gold'}} /> : <BedtimeIcon style={{color: 'rgb(0, 195, 255)'}} />}
+          <p className="sun-label current">{cityTime}</p>
         </div>
       </div>
     </div>
