@@ -44,7 +44,6 @@ export default function WeatherCard({weather, theme}) {
             <Card
                 sx={{
                     width: 350,
-                    boxShadow: '8px 8px 20px rgba(0,0,0,0.4)',
                     position: 'relative',
                 }}
             >
