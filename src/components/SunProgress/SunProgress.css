@@ -88,7 +88,7 @@
   transform: translateX(-146%);
 }
 
-.sun-marker,
+.sun-marker-wrapper,
 .sun-indicator {
   transition: left 3s ease-in-out;
 }
