@@ -2,9 +2,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import Compass from './compass';
-import { getSunProgress } from "../utils/sunProgress";
-import SunProgress from "./SunProgress";
+import Compass from '../Compass/Compass';
+import { getSunProgress } from "../../utils/sunProgress";
+import SunProgress from "../SunProgress/SunProgress";
 import './WeatherCard.css';
 
 // ICONS

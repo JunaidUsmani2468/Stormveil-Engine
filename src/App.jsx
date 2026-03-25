@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import SearchBox from './components/SearchBox'
-import WeatherCard from './components/WeatherCard'
+import SearchBox from './components/SearchBox/SearchBox'
+import WeatherCard from './components/WeatherCard/WeatherCard'
 import getWeatherTheme from "./utils/getWeatherTheme";
 import weatherThemes from './config/weatherThemes';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';

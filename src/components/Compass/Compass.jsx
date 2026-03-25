@@ -1,4 +1,4 @@
-import './compass.css';
+import './Compass.css';
 
 export default function Compass({ deg }) {
     return (
