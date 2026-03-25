@@ -27,7 +27,10 @@ function SunProgress({
             <span/>
           </div>
 
-          <p className="sun-label">{sunrise}</p>
+          <div className="sun-label">
+            <p>Sun Rise</p>
+            <p>{sunrise}</p>
+          </div>
         </div>
 
         {/* Sunset marker */}
@@ -39,7 +42,10 @@ function SunProgress({
             <span/>
           </div>
           
-          <p className="sun-label">{sunset}</p>
+          <div className="sun-label">
+            <p>Sun Set</p>
+            <p>{sunset}</p>
+          </div>
         </div>
 
         {/* Moving Sun */}
@@ -48,7 +54,10 @@ function SunProgress({
           style={{ left: `${currentPercent}%` }}
         >
           {isDay ? <SunnyIcon style={{color: 'gold'}} /> : <BedtimeIcon style={{color: 'rgb(0, 195, 255)'}} />}
-          <p className="sun-label current">{cityTime}</p>
+          <div className="sun-label current">
+            <p>Time</p>
+            <p>{cityTime}</p>
+          </div>
         </div>
       </div>
     </div>

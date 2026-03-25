@@ -65,18 +65,27 @@
 
 .sun-label {
   position: absolute;
-  top: 15px;
+  top: 25px;
   font-size: 0.7rem;
+  text-align: center;
+  line-height: .8rem;
   color: black;
   font-weight: 600;
   white-space: nowrap;
-  transform: translateX(-25%);
+  transform: translateX(-35%);
+}
+
+.sun-label > :first-child {
+  font-size: .6rem;
+}
+
+.sun-label p {
+  margin: 0;
 }
 
 .sun-label.current {
   top: -46px;
-  font-weight: bolder;
-  transform: translateX(-160%);
+  transform: translateX(-146%);
 }
 
 .sun-marker,
