@@ -28,7 +28,7 @@ function SunProgress({
           </div>
 
           <div className="sun-label">
-            <p>Sun Rise</p>
+            <p>Sunrise</p>
             <p>{sunrise}</p>
           </div>
         </div>
@@ -43,7 +43,7 @@ function SunProgress({
           </div>
           
           <div className="sun-label">
-            <p>Sun Set</p>
+            <p>Sunset</p>
             <p>{sunset}</p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 .sun-container {
-  margin-top: 10px;
+  margin-top: 20px;
   height: 80px;
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@
   color: black;
   font-weight: 600;
   white-space: nowrap;
-  transform: translateX(-35%);
+  transform: translateX(-30%);
 }
 
 .sun-label > :first-child {
@@ -85,7 +85,7 @@
 
 .sun-label.current {
   top: -46px;
-  transform: translateX(-146%);
+  transform: translateX(-156%);
 }
 
 .sun-marker-wrapper,
