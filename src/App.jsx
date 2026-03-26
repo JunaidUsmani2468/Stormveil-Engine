@@ -13,14 +13,14 @@ const data = {
   isDay: false,
   feelsLike: "YOU DON'T SEARCH YET 😂 E°P°I",
   humidity: 999,
-  sunrise: { formatted: "??:??" },
-  sunset: { formatted: "??:??" },
+  sunrise: { formatted: "♾️" },
+  sunset: { formatted: "♾️" },
   cityTime: { formatted: "♾️" },
   icon: "01n",
   temp: -999,
   windDeg: 0,
   windSpeed: 100000,
-  windDir: "NESW",
+  windDir: "???",
 };
 
 function App() {

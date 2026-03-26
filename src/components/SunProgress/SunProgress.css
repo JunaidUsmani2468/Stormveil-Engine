@@ -92,3 +92,25 @@
 .sun-indicator {
   transition: left 3s ease-in-out;
 }
+
+.sun-indicator.crazy {
+  animation: moveSun 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveSun {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.sun-marker-wrapper.crazy {
+  animation: markerMove 1s ease-in-out infinite alternate;
+}
+
+@keyframes markerMove {
+  from { transform: translateX(-50%) translateY(5px); }
+  to { transform: translateX(-50%) translateY(-5px); }
+}

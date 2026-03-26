@@ -20,8 +20,8 @@ function SunProgress({
         
         {/* Sunrise marker */}
         <div
-          className="sun-marker-wrapper"
-          style={{ left: `${sunrisePercent}%` }}
+          className={`sun-marker-wrapper ${cityTime === "♾️" ? "crazy" : ""}`}
+          style={{ left: `${cityTime === "♾️" ? 25 : sunrisePercent }%` }}
         >
           <div className="sun-marker">
             <span/>
@@ -35,8 +35,8 @@ function SunProgress({
 
         {/* Sunset marker */}
         <div
-          className="sun-marker-wrapper"
-          style={{ left: `${sunsetPercent}%` }}
+          className={`sun-marker-wrapper ${cityTime === "♾️" ? "crazy" : ""}`}
+          style={{ left: `${cityTime === "♾️" ? 75 : sunsetPercent}%` }}
         >
           <div className="sun-marker">
             <span/>
@@ -50,7 +50,7 @@ function SunProgress({
 
         {/* Moving Sun */}
         <div
-          className="sun-indicator"
+          className={`sun-indicator ${cityTime === "♾️" ? "crazy" : ""}`}
           style={{ left: `${currentPercent}%` }}
         >
           {isDay ? <SunnyIcon style={{color: 'gold'}} /> : <BedtimeIcon style={{color: 'rgb(0, 195, 255)'}} />}
