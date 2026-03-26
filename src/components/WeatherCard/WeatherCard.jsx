@@ -29,8 +29,6 @@ const weatherVisual = {
 
 export default function WeatherCard({weather, theme}) {
 
-    const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
-
     const sunData = getSunProgress({
         sunrise: weather.sunrise.raw,
         sunset: weather.sunset.raw,
@@ -66,7 +64,7 @@ export default function WeatherCard({weather, theme}) {
                         </div>
                         <p className='temp'>{weather.temp}&deg;C</p>
                         <p className='para'>
-                            In {weather.cityName}{weather.country ? `, ${regionNames.of(weather.country)}` : ''}, 
+                            In {weather.cityName}, {weather.country !== '' ? `${weather.country}, ` : '' }
                             the weather is {weatherVisual[theme.icon].text} with {weather.condition}.
                             It feels like {weather.feelsLike}°C with humidity at {weather.humidity}%.
                         </p>

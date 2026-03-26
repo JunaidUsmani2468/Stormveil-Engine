@@ -7,21 +7,21 @@ import weatherThemes from './config/weatherThemes';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 
 const data = {
-  country: "IN",
-  cityName: "Delhi",
-  condition: "clear sky",
-  isDay: true,
-  feelsLike: 29,
-  humidity: 19,
-  sunrise: {formatted: '123'},
-  sunset: {formatted: '123'},
-  cityTime: {formatted: '123'},
-  icon: "02d",
-  temp: 31,
-  windDeg: 168,
-  windSpeed: 3.99,
-  windDir: 'S',
-}
+  country: "Jupiter 🚀",
+  cityName: "Nowhere",
+  condition: "😈",
+  isDay: false,
+  feelsLike: "YOU DON'T SEARCH YET 😂 E°P°I",
+  humidity: 999,
+  sunrise: { formatted: "??:??" },
+  sunset: { formatted: "??:??" },
+  cityTime: { formatted: "♾️" },
+  icon: "01n",
+  temp: -999,
+  windDeg: 0,
+  windSpeed: 100000,
+  windDir: "NESW",
+};
 
 function App() {
   const [weatherInfo, setWeatherInfo] = useState(data);

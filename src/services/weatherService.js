@@ -34,9 +34,17 @@ export async function getWeather(city) {
         return directions[Math.round(deg / 45) % 8];
     };
 
+    const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+
+    let country = '';
+
+    if (jsonData.sys.country) {
+        country = regionNames.of(jsonData.sys.country);
+    }
+
     const result = {
         cityName: jsonData.name,
-        country: jsonData.sys.country,
+        country: country,
 
         temp: Math.round(jsonData.main.temp),
         feelsLike: Math.round(jsonData.main.feels_like),
