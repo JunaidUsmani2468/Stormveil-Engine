@@ -11,16 +11,16 @@ const data = {
   cityName: "Nowhere",
   condition: "chaos",
   isDay: false,
-  feelsLike: "you don't search yet 😂 L°O°G°I",
+  feelsLike: "you don't search yet 😂 T°R°A°G°I",
   humidity: 999,
   sunrise: { formatted: "♾️" },
   sunset: { formatted: "♾️" },
   cityTime: { formatted: "♾️" },
   icon: "01n",
-  temp: -999,
+  temp: 999,
   windDeg: 0,
-  windSpeed: 100000,
-  windDir: "???",
+  windSpeed: 999,
+  windDir: "404",
 };
 
 function App() {

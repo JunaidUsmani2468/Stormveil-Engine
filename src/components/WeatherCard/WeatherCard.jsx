@@ -53,7 +53,7 @@ export default function WeatherCard({weather, theme}) {
                     />
                     <div className="mediaOverlay"></div>
                 </div>
-                <CardContent>
+                <CardContent sx={{padding: '15px !important', paddingTop: '10px !important'}}>
                     <Typography gutterBottom variant="h5" component="div">
                         <h2 className='cityName'>{weather.cityName}</h2>
                     </Typography>
