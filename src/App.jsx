@@ -11,7 +11,7 @@ const data = {
   cityName: "Nowhere",
   condition: "chaos",
   isDay: false,
-  feelsLike: "YOU DON'T SEARCH YET 😂 E°P°I",
+  feelsLike: "you don't search yet 😂 L°O°G°I",
   humidity: 999,
   sunrise: { formatted: "♾️" },
   sunset: { formatted: "♾️" },
