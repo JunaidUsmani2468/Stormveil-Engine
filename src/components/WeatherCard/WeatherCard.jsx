@@ -84,7 +84,7 @@ export default function WeatherCard({weather, theme}) {
                                 <p>Wind Speed</p>
                                 <p>{weather.windSpeed} m/s</p>
                             </div>
-                            <Compass deg={weather.windDeg} />
+                            <Compass deg={weather.windDeg} cityName={weather.cityName} />
                             <div>
                                 <p>Wind Direction</p>
                                 <p>{weather.windDir}</p>

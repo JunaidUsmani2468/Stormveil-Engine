@@ -1,6 +1,6 @@
 import './Compass.css';
 
-export default function Compass({ deg }) {
+export default function Compass({ deg, cityName }) {
     return (
         <div className="compass">
             <svg viewBox="0 0 100 100" width="80" height="80">
@@ -16,7 +16,7 @@ export default function Compass({ deg }) {
 
                 {/* needle */}
                 <g
-                    className="needle"
+                    className={`needle ${cityName === "Nowhere" ? "crazy" : ""}`}
                     style={{ transform: `rotate(${deg}deg)` }}
                 >
                     {/* arrow head (direction) */}

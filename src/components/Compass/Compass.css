@@ -16,3 +16,16 @@
   transform-origin: 50% 50%;
   transition: transform 5s ease-in-out;
 }
+
+.needle.crazy {
+  animation: spin 1.5s alternate infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
