@@ -9,7 +9,7 @@ import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 const data = {
   country: "Jupiter 🚀",
   cityName: "Nowhere",
-  condition: "😈",
+  condition: "chaos",
   isDay: false,
   feelsLike: "YOU DON'T SEARCH YET 😂 E°P°I",
   humidity: 999,

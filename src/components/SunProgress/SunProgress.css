@@ -114,3 +114,30 @@
   from { transform: translateX(-50%) translateY(5px); }
   to { transform: translateX(-50%) translateY(-5px); }
 }
+
+.satellite {
+  animation: float 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateX(-35%) rotate(-20deg); }
+  to { transform: translateX(-35%) rotate(20deg); }
+}
+
+.moon {
+  animation: moonfloat 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes moonfloat {
+  from { transform: translateX(-35%) rotate(-30deg); }
+  to { transform: translateX(-35%) rotate(0deg); }
+}
+
+.sun {
+  animation: sunfloat 3s linear infinite;
+}
+
+@keyframes sunfloat {
+  from { transform: translateX(-35%) rotate(0deg); }
+  to { transform: translateX(-35%) rotate(360deg); }
+}

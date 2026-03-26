@@ -1,6 +1,7 @@
 import "./SunProgress.css";
 import SunnyIcon from '@mui/icons-material/Sunny';
 import BedtimeIcon from '@mui/icons-material/Bedtime';
+import SatelliteAltSharpIcon from '@mui/icons-material/SatelliteAltSharp';
 
 
 function SunProgress({
@@ -53,7 +54,12 @@ function SunProgress({
           className={`sun-indicator ${cityTime === "♾️" ? "crazy" : ""}`}
           style={{ left: `${currentPercent}%` }}
         >
-          {isDay ? <SunnyIcon style={{color: 'gold'}} /> : <BedtimeIcon style={{color: 'rgb(0, 195, 255)'}} />}
+          {isDay ?
+            <SunnyIcon className="sun" style={{color: 'gold'}} /> :
+            cityTime === '♾️' ?
+            <SatelliteAltSharpIcon className="satellite" style={{color: 'purple'}}/> :
+            <BedtimeIcon className="moon" style={{color: 'rgb(0, 195, 255)'}}
+          />}
           <div className="sun-label current">
             <p>Time</p>
             <p>{cityTime}</p>
