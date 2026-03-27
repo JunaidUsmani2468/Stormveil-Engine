@@ -18,7 +18,7 @@ const weatherThemes = {
 
   cold: {
     image: coldImg,
-    gradient: "linear-gradient(rgba(0,123,255,0.5), rgba(0,0,139,0.8))",
+    gradient: "linear-gradient(rgba(0, 123, 255, 0.2), rgba(0, 0, 139, 0.3))",
     icon: 'cold',
     textColor: "#ffffff",
     glowColor: "rgba(0, 0, 0, 0.9)"
@@ -34,18 +34,18 @@ const weatherThemes = {
 
   snow: {
     image: snowImg,
-    gradient: "linear-gradient(rgba(200,220,255,0.8), rgba(148, 125, 211, 0.5))",
+    gradient: "linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3))",
     icon: "snow",
     textColor: "#ffffff",
-    glowColor: "rgba(255, 195, 31, 0.7)"
+    glowColor: "#7bd5ff",
   },
 
   storm: {
     image: stormImg,
-    gradient: "linear-gradient(rgba(80, 15, 117, 0.6), rgba(0,0,0,0.7))",
+    gradient: "linear-gradient(rgba(80, 15, 117, 0.4), rgba(0,0,0,0.7))",
     icon: "storm",
-    textColor: "#e437ff",
-    glowColor: "rgba(0, 0, 0, 1)"
+    textColor: "rgba(255, 0, 255, 0.9)",
+    glowColor: "rgba(0, 0, 0, .8)"
   },
 
   fog: {
@@ -66,10 +66,10 @@ const weatherThemes = {
 
   default: {
     image: defaultImg,
-    gradient: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))",
+    gradient: "linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4))",
     icon: "default",
     textColor: "#ffffff",
-    glowColor: "rgba(0,0,0,0.6)"
+    glowColor: "rgba(0,0,0,0.8)"
   },
 };
 
