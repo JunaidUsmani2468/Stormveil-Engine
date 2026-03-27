@@ -5,6 +5,7 @@ import WeatherCard from './components/WeatherCard/WeatherCard'
 import getWeatherTheme from "./utils/getWeatherTheme";
 import weatherThemes from './config/weatherThemes';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
+import SoundToggle from "./components/SoundToggle/SoundToggle";
 
 const data = {
   country: "Jupiter 🚀",
@@ -53,6 +54,7 @@ function App() {
         </h1>
         <SearchBox updateWeather={updateWeather} theme={theme} />
         <WeatherCard weather={weatherInfo} theme={theme} />
+        <SoundToggle />
       </div>
     </>
   )
