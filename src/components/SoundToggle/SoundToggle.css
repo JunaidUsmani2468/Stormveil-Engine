@@ -1,0 +1,20 @@
+.sound-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  padding: 8px 14px;
+  border-radius: 20px;
+
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+
+  border: 1px solid var(--glow-color);
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.sound-btn:hover {
+  box-shadow: 0 0 10px var(--glow-color);
+}
