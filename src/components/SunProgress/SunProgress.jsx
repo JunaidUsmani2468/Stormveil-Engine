@@ -13,8 +13,6 @@ function SunProgress({
   sunset,
   cityTime
 }) {
-  console.log(cityTime, sunrise, sunset);
-  
   return (
     <div className="sun-container">
       <div className="sun-track">

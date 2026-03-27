@@ -9,8 +9,6 @@ export async function getWeather(city) {
         throw new Error("City not found");
     }
 
-    console.log(jsonData);
-
     function formatTime(timestamp, timezone) {
         const date = new Date((timestamp + timezone) * 1000);
         return date.toUTCString().slice(17, 22); // HH:MM format

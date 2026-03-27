@@ -35,8 +35,6 @@ export default function WeatherCard({weather, theme}) {
         timezone: weather.timezone
     });
 
-    console.log(sunData);
-
     return (
         <div>
             <Card

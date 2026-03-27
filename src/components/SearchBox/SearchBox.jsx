@@ -26,7 +26,6 @@ export default function SearchBox({ updateWeather }) {
 
         try {
             const weather = await getWeather(cleanedCity);
-            console.log(weather);
             updateWeather(weather);
         } catch (err) {
             setError(true);

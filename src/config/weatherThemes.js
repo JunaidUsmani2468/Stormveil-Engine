@@ -10,7 +10,7 @@ import stormImg from "../assets/images/storm.avif";
 const weatherThemes = {
   hot: {
     image: hotImg,
-    gradient: "linear-gradient(rgba(255,140,0,0.5), rgba(255,69,0,0.5))",
+    gradient: "linear-gradient(rgba(255,140,0,0.3), rgba(255,69,0,0.4))",
     icon: 'sun',
     textColor: "#ffc1b9",
     glowColor: "rgba(255, 140, 0, 0.93)"
@@ -50,7 +50,7 @@ const weatherThemes = {
 
   fog: {
     image: fogImg,
-    gradient: "linear-gradient(rgba(200,200,200,0.5), rgba(223, 102, 27, 0.4))",
+    gradient: "linear-gradient(rgba(200,200,200,0.2), rgba(223, 102, 27, 0.1))",
     icon: "fog",
     textColor: "#ffffff",
     glowColor: "rgba(255, 55, 0, 0.9)"

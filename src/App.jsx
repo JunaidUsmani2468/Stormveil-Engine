@@ -27,8 +27,8 @@ function App() {
   const [weatherInfo, setWeatherInfo] = useState(data);
 
   const themeName = getWeatherTheme(weatherInfo);
-  // const theme = weatherThemes[themeName];
-  const theme = weatherThemes.storm;
+  const theme = weatherThemes[themeName];
+  // const theme = weatherThemes.storm;
 
   let updateWeather = (result) => {
     setWeatherInfo(result);
