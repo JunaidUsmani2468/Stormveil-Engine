@@ -1,6 +1,6 @@
 let audio = null;
 
-export function playSound(src, volume = 0.3) {
+export function playSound(src, volume = .5) {
   // stop previous sound
   if (audio) {
     audio.pause();

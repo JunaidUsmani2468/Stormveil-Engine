@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import SearchBox from './components/SearchBox/SearchBox'
 import WeatherCard from './components/WeatherCard/WeatherCard'
@@ -6,6 +6,7 @@ import getWeatherTheme from "./utils/getWeatherTheme";
 import weatherThemes from './config/weatherThemes';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 import SoundToggle from "./components/SoundToggle/SoundToggle";
+import { playSound, stopSound } from "./utils/soundManager";
 
 const data = {
   country: "Jupiter 🚀",
@@ -26,6 +27,7 @@ const data = {
 
 function App() {
   const [weatherInfo, setWeatherInfo] = useState(data);
+  const [isSoundOn, setIsSoundOn] = useState(false);
 
   const themeName = getWeatherTheme(weatherInfo);
   const theme = weatherThemes[themeName];
@@ -34,6 +36,14 @@ function App() {
   let updateWeather = (result) => {
     setWeatherInfo(result);
   }
+
+  useEffect(() => {
+    if (isSoundOn && theme?.sound) {
+      playSound(theme.sound);
+    } else {
+      stopSound();
+    }
+  }, [theme, isSoundOn]);
 
   return (
     <>
@@ -54,7 +64,7 @@ function App() {
         </h1>
         <SearchBox updateWeather={updateWeather} theme={theme} />
         <WeatherCard weather={weatherInfo} theme={theme} />
-        <SoundToggle />
+        <SoundToggle isSoundOn={isSoundOn} setIsSoundOn={setIsSoundOn} />
       </div>
     </>
   )
