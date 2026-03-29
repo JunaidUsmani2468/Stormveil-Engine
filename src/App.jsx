@@ -39,7 +39,7 @@ function App() {
 
   useEffect(() => {
     if (isSoundOn && theme?.sound) {
-      if (themeName === "storm") {
+      if (typeof theme.sound === "object") {
         playStormSound(theme.sound.base, theme.sound.lightning);
       } else {
         playSound(theme.sound);
