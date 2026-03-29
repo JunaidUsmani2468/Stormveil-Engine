@@ -6,14 +6,14 @@ import getWeatherTheme from "./utils/getWeatherTheme";
 import weatherThemes from './config/weatherThemes';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 import SoundToggle from "./components/SoundToggle/SoundToggle";
-import { playSound, stopSound } from "./utils/soundManager";
+import { playSound, stopSound, playStormSound } from "./utils/soundManager";
 
 const data = {
   country: "Jupiter 🚀",
   cityName: "Nowhere",
   condition: "chaos",
   isDay: false,
-  feelsLike: "you don't search yet 😂 T°R°A°G°I",
+  feelsLike: "you don't search yet 😈 T°R°A°G°I",
   humidity: 999,
   sunrise: { formatted: "♾️" },
   sunset: { formatted: "♾️" },
@@ -39,7 +39,11 @@ function App() {
 
   useEffect(() => {
     if (isSoundOn && theme?.sound) {
-      playSound(theme.sound);
+      if (themeName === "storm") {
+        playStormSound(theme.sound.base, theme.sound.lightning);
+      } else {
+        playSound(theme.sound);
+      }
     } else {
       stopSound();
     }

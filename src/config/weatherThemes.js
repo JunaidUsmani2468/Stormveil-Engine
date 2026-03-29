@@ -15,8 +15,13 @@ import snowSound from "../assets/sounds/snow.mp3";
 import cloudySound from "../assets/sounds/cloudy.mp3";
 import fogSound from "../assets/sounds/fog.mp3";
 import rainSound from "../assets/sounds/rain.mp3";
-import stormSound from "../assets/sounds/rain.mp3";
 import defaultSound from "../assets/sounds/default.mp3";
+
+// STORM SOUNDS
+import stormSound from "../assets/sounds/storm/storm_base.mp3";
+import lightning1 from "../assets/sounds/storm/lightning1_loud.mp3";
+import lightning2 from "../assets/sounds/storm/lightning2_loud.mp3";
+import lightning3 from "../assets/sounds/storm/lightning3_loud.mp3";
 
 const weatherThemes = {
   hot: {
@@ -62,7 +67,14 @@ const weatherThemes = {
   storm: {
     image: stormImg,
     icon: "storm",
-    sound: stormSound,
+    sound: {
+      base: stormSound,
+      lightning: [
+        lightning1,
+        lightning2,
+        lightning3
+      ]
+    },
 
     gradient: "linear-gradient(rgba(80, 15, 117, 0.4), rgba(0,0,0,0.7))",
     textColor: "rgba(255, 0, 255, 0.9)",
