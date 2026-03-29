@@ -96,10 +96,20 @@ const weatherThemes = {
     icon: "cloudy",
     sound: cloudySound,
 
-    gradient: "linear-gradient(rgba(120,150,180,0.7), rgba(80,110,140,0.8))",
-    textColor: "#fff0e7",
-    glowColor: "rgba(205, 134, 80, 0.7)"
+    gradient: "linear-gradient(rgba(120,150,180,0.5), rgba(80,110,140,0.5))",
+    textColor: "#ffffff",
+    glowColor: "rgba(255, 223, 100, 0.8)",
   },
+
+  // cloudy: {
+  //   image: cloudyImg,
+  //   icon: "cloudy",
+  //   sound: cloudySound,
+
+  //   gradient: "linear-gradient(rgba(180, 210, 255, 0.35), rgba(255, 240, 200, 0.25))",
+  //   textColor: "#fdfaf3",
+  //   glowColor: "rgba(255, 223, 120, 0.65)"
+  // },
 
   default: {
     image: defaultImg,
