@@ -11,7 +11,7 @@ export default function Compass({ deg, cityName }) {
     const animateToTarget = (target) => {
         cancelAnimationFrame(animationFrame.current);
 
-        const speed = .01; // rotation speed
+        const speed = .009; // rotation speed
 
         const animate = () => {
             let diff = target - currentDeg.current;
