@@ -7,7 +7,8 @@ export default function useCompassAnimation({ deg, cityName, needleRef }) {
     // 🎯 APPLY ROTATION
     const updateRotation = () => {
         if (needleRef.current) {
-            needleRef.current.style.transform = `rotate(${currentDeg.current}deg)`;
+            const normalized = ((currentDeg.current % 360) + 360) % 360;
+            needleRef.current.style.transform = `rotate(${normalized}deg)`;
         }
     };
 
@@ -55,7 +56,7 @@ export default function useCompassAnimation({ deg, cityName, needleRef }) {
             if (diff > 180) diff -= 360;
             if (diff < -180) diff += 360;
 
-            if (Math.abs(diff) < 0.5) {
+            if (Math.abs(diff) < 3) {
                 currentDeg.current = target;
                 startFlicker(target);
                 return;
