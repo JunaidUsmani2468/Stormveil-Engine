@@ -7,6 +7,7 @@ import weatherThemes from './config/weatherThemes';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 import SoundToggle from "./components/SoundToggle/SoundToggle";
 import ExperimentalBtn from './components/ExperimentalBtn/ExperimentalBtn';
+import ExperimentalPanel from './components/ExperimentalPanel/ExperimentalPanel';
 import { playSound, stopSound, playStormSound } from "./utils/soundManager";
 
 const data = {
@@ -29,6 +30,7 @@ const data = {
 function App() {
   const [weatherInfo, setWeatherInfo] = useState(data);
   const [isSoundOn, setIsSoundOn] = useState(false);
+  const [isExperimentalOpen, setIsExperimentalOpen] = useState(false);
 
   const themeName = getWeatherTheme(weatherInfo);
   const theme = weatherThemes[themeName];
@@ -70,7 +72,8 @@ function App() {
         <SearchBox updateWeather={updateWeather} theme={theme} />
         <WeatherCard weather={weatherInfo} theme={theme} />
         <SoundToggle isSoundOn={isSoundOn} setIsSoundOn={setIsSoundOn} />
-        <ExperimentalBtn />
+        <ExperimentalBtn isOpen={isExperimentalOpen} onClick={() => setIsExperimentalOpen(true)} />
+        <ExperimentalPanel isOpen={isExperimentalOpen} onClose={() => setIsExperimentalOpen(false)} />
       </div>
     </>
   )

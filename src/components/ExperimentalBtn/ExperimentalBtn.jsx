@@ -1,12 +1,13 @@
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import './ExperimentalBtn.css';
 
-export default function ExperimentalBtn() {
+export default function ExperimentalBtn({ onClick, isOpen }) {
     return (
-        <div>
-            <button className='experimental-btn'>
-                <RocketLaunchIcon />
-            </button>
-        </div>
+        <button
+            className={`experimental-btn ${isOpen ? 'hide' : '' }`}
+            onClick={ onClick }
+        >
+            <RocketLaunchIcon />
+        </button>
     )
 }

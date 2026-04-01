@@ -1,0 +1,16 @@
+.PanelContainer {
+    position: absolute;
+    right: -400px; /* hidden */
+    bottom: 20px;
+    transition: .3s ease;
+}
+
+.PanelContainer.open {
+    right: 30px;
+}
+
+.PanelContainer h3 {
+    font-size: 1.2rem !important;
+    font-weight: 400;
+    margin: 0;
+}

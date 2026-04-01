@@ -39,6 +39,10 @@
     transform: scale(1.05);
 }
 
+.experimental-btn.hide {
+    display: none;
+}
+
 @keyframes gradientFlow {
     0% {
         background-position: 0% 50%;
