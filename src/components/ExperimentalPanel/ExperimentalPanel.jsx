@@ -11,13 +11,13 @@ export default function ExperimentalPanel({ isOpen, onClose }) {
             <Card className='ExperimentalPanel' sx={{ minWidth: 275 }}>
                 <CardContent>
                     <Typography variant="h5" component="div">
-                        <h3>Want to explore🌍 every weather</h3>
+                        <h3>Want to explore 🌍 every weather</h3>
                     </Typography>
                     <Typography variant="body2">
-                        Try our Experimental🚀 Mode
+                        Try our Experimental 🚀 Mode
                     </Typography>
                 </CardContent>
-                <CardActions>
+                <CardActions className='closeBtnContainer'>
                     <Button size="small" onClick={onClose}>Close</Button>
                 </CardActions>
             </Card>

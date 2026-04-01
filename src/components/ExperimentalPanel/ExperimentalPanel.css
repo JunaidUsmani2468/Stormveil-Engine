@@ -2,15 +2,44 @@
     position: absolute;
     right: -400px; /* hidden */
     bottom: 20px;
-    transition: .3s ease;
+    transition: .4s ease;
 }
 
 .PanelContainer.open {
     right: 30px;
 }
 
-.PanelContainer h3 {
+.ExperimentalPanel {
+    background: rgba(0, 0, 0, 0.55) !important;
+    backdrop-filter: blur(20px);
+    position: relative;
+    border-radius: 5px !important;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 0 20px rgba(255, 0, 255, 0.2),
+        0 10px 40px rgba(0, 0, 0, 0.5);
+
+    color: white !important;
+}
+
+.ExperimentalPanel h3 {
     font-size: 1.2rem !important;
-    font-weight: 400;
-    margin: 0;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+.ExperimentalPanel p {
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+.closeBtnContainer {
+    display: flex;
+    justify-content: end;
+}
+
+.ExperimentalPanel button {
+    color: #ff00cc !important;
+    font-weight: bold;
 }
