@@ -6,6 +6,7 @@ import getWeatherTheme from "./utils/getWeatherTheme";
 import weatherThemes from './config/weatherThemes';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 import SoundToggle from "./components/SoundToggle/SoundToggle";
+import ExperimentalBtn from './components/ExperimentalBtn/ExperimentalBtn';
 import { playSound, stopSound, playStormSound } from "./utils/soundManager";
 
 const data = {
@@ -69,6 +70,7 @@ function App() {
         <SearchBox updateWeather={updateWeather} theme={theme} />
         <WeatherCard weather={weatherInfo} theme={theme} />
         <SoundToggle isSoundOn={isSoundOn} setIsSoundOn={setIsSoundOn} />
+        <ExperimentalBtn />
       </div>
     </>
   )
