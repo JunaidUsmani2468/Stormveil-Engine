@@ -8,6 +8,7 @@ import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 import SoundToggle from "./components/SoundToggle/SoundToggle";
 import ExperimentalBtn from './components/ExperimentalBtn/ExperimentalBtn';
 import ExperimentalPanel from './components/ExperimentalPanel/ExperimentalPanel';
+import { experimentalWeather } from './data/experimentalWeather';
 import { playSound, stopSound, playStormSound } from "./utils/soundManager";
 
 const data = {
@@ -31,14 +32,21 @@ function App() {
   const [weatherInfo, setWeatherInfo] = useState(data);
   const [isSoundOn, setIsSoundOn] = useState(false);
   const [isExperimentalOpen, setIsExperimentalOpen] = useState(false);
+  const [forcedTheme, setForcedTheme] = useState(null);
 
-  const themeName = getWeatherTheme(weatherInfo);
+  const themeName = forcedTheme || getWeatherTheme(weatherInfo);
   const theme = weatherThemes[themeName];
-  // const theme = weatherThemes.storm;
 
   let updateWeather = (result) => {
+    setForcedTheme(null);
     setWeatherInfo(result);
   }
+
+  const handleExperimentalSelect = (themeKey) => {
+    setWeatherInfo(experimentalWeather[themeKey]);
+    setForcedTheme(themeKey); // 💥 override theme
+    setIsExperimentalOpen(false);
+  };
 
   useEffect(() => {
     if (isSoundOn && theme?.sound) {
@@ -69,13 +77,26 @@ function App() {
             <ThunderstormIcon />
           </span>
         </h1>
-        <SearchBox updateWeather={updateWeather} theme={theme} />
-        <WeatherCard weather={weatherInfo} theme={theme} />
-        <SoundToggle isSoundOn={isSoundOn} setIsSoundOn={setIsSoundOn} />
-        <ExperimentalBtn isOpen={isExperimentalOpen} onClick={() => setIsExperimentalOpen(true)} />
+        <SearchBox
+          updateWeather={updateWeather}
+          theme={theme}
+        />
+        <WeatherCard
+          weather={weatherInfo}
+          theme={theme}
+        />
+        <SoundToggle
+          isSoundOn={isSoundOn}
+          setIsSoundOn={setIsSoundOn}
+        />
+        <ExperimentalBtn
+          isOpen={isExperimentalOpen} 
+          onClick={() => setIsExperimentalOpen(true)}
+        />
         <ExperimentalPanel
           isOpen={isExperimentalOpen}
           onClose={() => setIsExperimentalOpen(false)}
+          onSelect={handleExperimentalSelect}
         />
       </div>
     </>
