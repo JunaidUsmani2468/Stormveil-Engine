@@ -27,13 +27,24 @@ const weatherVisual = {
   default: { icon: <WbSunnyIcon />, text: "clear and pleasant" },
 };
 
-export default function WeatherCard({weather, theme}) {
+export default function WeatherCard({weather, theme, isExperimental }) {
 
-    const sunData = getSunProgress({
-        sunrise: weather.sunrise.raw,
-        sunset: weather.sunset.raw,
-        timezone: weather.timezone
-    });
+    let sunData;
+
+    if (isExperimental) {
+        sunData = {
+            sunrisePercent: weather.sunrisePercent,
+            sunsetPercent: weather.sunsetPercent,
+            currentPercent: weather.currentPercent,
+            isDayProgress: weather.isDay,
+        };
+    } else {
+        sunData = getSunProgress({
+            sunrise: weather.sunrise.raw,
+            sunset: weather.sunset.raw,
+            timezone: weather.timezone
+        });
+    }
 
     return (
         <div>

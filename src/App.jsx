@@ -34,6 +34,8 @@ function App() {
   const [isExperimentalOpen, setIsExperimentalOpen] = useState(false);
   const [forcedTheme, setForcedTheme] = useState(null);
 
+  const isExperimentalMode = !!forcedTheme;
+
   const themeName = forcedTheme || getWeatherTheme(weatherInfo);
   const theme = weatherThemes[themeName];
 
@@ -84,6 +86,7 @@ function App() {
         <WeatherCard
           weather={weatherInfo}
           theme={theme}
+          isExperimental={isExperimentalMode}
         />
         <SoundToggle
           isSoundOn={isSoundOn}
