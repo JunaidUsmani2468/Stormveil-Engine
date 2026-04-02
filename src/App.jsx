@@ -73,7 +73,10 @@ function App() {
         <WeatherCard weather={weatherInfo} theme={theme} />
         <SoundToggle isSoundOn={isSoundOn} setIsSoundOn={setIsSoundOn} />
         <ExperimentalBtn isOpen={isExperimentalOpen} onClick={() => setIsExperimentalOpen(true)} />
-        <ExperimentalPanel isOpen={isExperimentalOpen} onClose={() => setIsExperimentalOpen(false)} />
+        <ExperimentalPanel
+          isOpen={isExperimentalOpen}
+          onClose={() => setIsExperimentalOpen(false)}
+        />
       </div>
     </>
   )
