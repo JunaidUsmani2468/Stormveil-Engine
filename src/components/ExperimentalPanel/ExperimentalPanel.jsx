@@ -3,6 +3,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { experimentalWeather } from '../../data/experimentalWeather';
 import './ExperimentalPanel.css';
 
 export default function ExperimentalPanel({ isOpen, onClose }) {
@@ -16,6 +17,17 @@ export default function ExperimentalPanel({ isOpen, onClose }) {
                     <Typography variant="body2">
                         Try our Experimental 🚀 Mode
                     </Typography>
+                    <div className="options">
+                        {Object.entries(experimentalWeather).map(([key, data]) => (
+                            <div key={key} className="option">                                
+                                <p>{data.cityName}</p>
+
+                                <button onClick={() => handleSelect(key)}>
+                                    Apply
+                                </button>
+                            </div>
+                        ))}
+                    </div>
                 </CardContent>
                 <CardActions className='closeBtnContainer'>
                     <Button size="small" onClick={onClose}>Close</Button>
