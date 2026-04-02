@@ -3,6 +3,7 @@
     right: -400px; /* hidden */
     bottom: 20px;
     transition: .4s ease;
+    z-index: 8;
 }
 
 .PanelContainer.open {
@@ -39,7 +40,59 @@
     justify-content: end;
 }
 
-.ExperimentalPanel button {
+.closeBtnContainer button {
     color: #ff00cc !important;
     font-weight: bold;
+}
+
+.options {
+    margin-top: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* 🔥 reduced spacing */
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 6px 8px; /* 🔥 compact */
+    border-radius: 6px;
+
+    transition: 0.2s ease;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info p {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.info small {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.option button {
+    min-width: auto !important;
+    padding: 4px 10px !important;
+    font-size: 0.7rem !important;
+
+    color: #00c3ff !important;
+}
+
+.option:not(:last-child) {
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }

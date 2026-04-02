@@ -20,11 +20,13 @@ export default function ExperimentalPanel({ isOpen, onClose, onSelect }) {
                     <div className="options">
                         {Object.entries(experimentalWeather).map(([key, data]) => (
                             <div key={key} className="option">
-                                <p>{data.cityName}</p>
-                                <small>{data.condition}</small>
+                                <div className="info">
+                                    <p>{data.cityName}</p>
+                                    <small>{data.condition}</small>
+                                </div>
 
                                 <Button onClick={() => onSelect(key)}>
-                                    Apply
+                                    Launch
                                 </Button>
                             </div>
                         ))}

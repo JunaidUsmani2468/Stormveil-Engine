@@ -12,7 +12,7 @@ import { experimentalWeather } from './data/experimentalWeather';
 import { playSound, stopSound, playStormSound } from "./utils/soundManager";
 
 const data = {
-  country: "Jupiter 🚀",
+  country: "Universe",
   cityName: "Nowhere",
   condition: "chaos",
   isDay: false,
