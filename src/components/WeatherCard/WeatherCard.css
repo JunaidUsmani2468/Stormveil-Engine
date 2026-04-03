@@ -10,11 +10,7 @@
   justify-content: center;
   align-items: center;
 
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0),
-    rgba(0,0,0,0.2)
-  );
+  background: var(--overlay);
 }
 
 .para {
@@ -54,7 +50,7 @@
 .cityName,
 .temp,
 .condition {
-    color: white;
+    color: var(--text-primary);
 }
 
 

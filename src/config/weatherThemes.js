@@ -76,9 +76,31 @@ const weatherThemes = {
       ]
     },
 
-    gradient: "linear-gradient(rgba(80, 15, 117, 0.4), rgba(0,0,0,0.7))",
-    textColor: "rgba(255, 0, 255, 0.9)",
-    glowColor: "rgba(0, 0, 0, .8)"
+    primary: "rgb(204, 0, 204)",
+    accent: "rgb(200, 100, 255)",
+    
+    secondary: "rgb(120, 20, 140)",
+    textPrimary: "#ffffff",
+    textSecondary: "rgb(195, 0, 195)",
+
+    border: "rgb(195, 0, 195)",
+
+    overlay: `
+      linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 50%,
+        rgba(60,0,80,0.6) 100%
+      )
+    `,
+    bgGradient: `
+      linear-gradient(
+        120deg,
+        rgba(255, 0, 200, 0.15),
+        rgba(0, 0, 0, .3) 40%
+      )
+    `,
+
+    glow: "rgba(0, 0, 0, 0.6)",
   },
 
   fog: {

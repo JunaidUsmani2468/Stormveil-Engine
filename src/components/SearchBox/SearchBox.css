@@ -1,48 +1,48 @@
 .searchBox {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    background: rgba(0, 0, 0, 0.35); /* dark glass */
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+  background: rgba(0, 0, 0, 0.35); /* dark glass */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 
-    border: 1px solid var(--text-color);
-    border-radius: 5px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
 
-    box-shadow: 
-        0 0 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 
+      0 0 2px rgba(0, 0, 0, 0.6);
 
-    padding: 8px;
+  padding: 8px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* SEARCH BAR STYLING */
 
 /* Input text color */
 .searchBar input {
-  color: var(--text-color);
+  color: var(--text-secondary);
 }
 
 /* Label color */
 .searchBar label {
-  color: var(--text-color) !important;
+  color: var(--text-secondary) !important;
 }
 
 /* Border color */
 .searchBar .MuiOutlinedInput-root fieldset {
-  border: 2px solid var(--glow-color);
+  border: 2px solid var(--accent);
 }
 
 /* Hover border */
 .searchBar:hover .MuiOutlinedInput-root fieldset {
-  border-color: var(--glow-color);
+  border-color: var(--accent);
 }
 
 /* Focus border */
 .searchBar .MuiOutlinedInput-root.Mui-focused fieldset {
-  border-color: var(--glow-color);
+  border-color: var(--accent);
 }
 
 /* SEARCH BTN STYLING */
@@ -50,6 +50,6 @@
   padding: 7px 11px !important;
   margin-left: 5px !important;
 
-  color: var(--text-color) !important;
-  border: 2px solid var(--glow-color) !important;
+  color: var(--text-secondary) !important;
+  border: 2px solid var(--accent) !important;
 }

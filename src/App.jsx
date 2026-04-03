@@ -68,9 +68,20 @@ function App() {
         className="app"
         style={{
           "--bg-image": `url(${theme.image})`,
-          "--gradient": theme.gradient,
-          "--text-color": theme.textColor,
-          "--glow-color": theme.glowColor,
+
+          "--primary": theme.primary,
+          "--accent": theme.accent,
+
+          "--secondary": theme.secondary,
+          "--text-primary": theme.textPrimary,
+          "--text-secondary": theme.textSecondary,
+
+          "--border": theme.border,
+
+          "--overlay": theme.overlay,
+          "--bg-gradient": theme.bgGradient,
+
+          "--glow": theme.glow,
         }}
       >
         <h1>

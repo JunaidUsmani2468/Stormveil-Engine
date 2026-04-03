@@ -12,7 +12,7 @@
   align-items: center;
   width: 80%;
   height: 6px;
-  background-color: var(--glow-color);
+  background-color: var(--secondary);
   border-radius: 999px;
   z-index: 1;
 }
@@ -32,7 +32,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: var(--glow-color);
+  background-color: var(--secondary);
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 
@@ -41,7 +41,7 @@
   width: 10px;
   display: flex;
   display: inline-block;
-  background-color: var(--text-color);
+  background-color: var(--accent);
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 
