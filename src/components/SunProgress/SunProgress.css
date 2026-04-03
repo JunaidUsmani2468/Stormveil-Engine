@@ -88,6 +88,10 @@
   transform: translateX(-156%);
 }
 
+.sun-label.current.exp {
+  transform: translateX(-122%);
+}
+
 .sun-marker-wrapper,
 .sun-indicator {
   transition: left 3s ease-in-out;

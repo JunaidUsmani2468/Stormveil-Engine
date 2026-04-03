@@ -85,6 +85,7 @@ export default function WeatherCard({weather, theme, isExperimental }) {
                             sunrise={weather.sunrise.formatted}
                             sunset={weather.sunset.formatted}
                             cityTime={weather.cityTime.formatted}
+                            isExperimental={isExperimental}
                         />
                         {/* <p>Pressure: {weather.pressure} hPa</p> */}
                         {/* <p>{weatherVisual[theme.icon].icon}</p> */}

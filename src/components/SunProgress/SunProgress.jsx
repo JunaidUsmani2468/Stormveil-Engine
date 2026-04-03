@@ -11,7 +11,8 @@ function SunProgress({
   isDay,
   sunrise,
   sunset,
-  cityTime
+  cityTime,
+  isExperimental
 }) {
   return (
     <div className="sun-container">
@@ -58,7 +59,7 @@ function SunProgress({
             <SatelliteAltSharpIcon className="satellite" style={{color: 'purple'}}/> :
             <BedtimeIcon className="moon" style={{color: 'rgb(0, 195, 255)'}}
           />}
-          <div className="sun-label current">
+          <div className={`sun-label current ${isExperimental ? "exp" : ""}`}>
             <p>Time</p>
             <p>{cityTime}</p>
           </div>
