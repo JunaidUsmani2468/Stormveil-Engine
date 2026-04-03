@@ -92,13 +92,7 @@ const weatherThemes = {
         rgba(60,0,80,0.6) 100%
       )
     `,
-    bgGradient: `
-      linear-gradient(
-        120deg,
-        rgba(255, 0, 200, 0.15),
-        rgba(0, 0, 0, .3) 40%
-      )
-    `,
+    bgGradient: "linear-gradient(rgba(80, 15, 117, 0.4), rgba(0,0,0,0.7))",
 
     glow: "rgba(0, 0, 0, 0.6)",
   },
