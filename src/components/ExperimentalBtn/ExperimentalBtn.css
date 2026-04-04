@@ -1,5 +1,5 @@
 .experimental-btn {
-    position: fixed;
+    position: absolute;
     bottom: 20px;
     right: 30px;
 
@@ -52,5 +52,32 @@
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 850px) {
+    .experimental-btn {
+        position: unset;
+        height: 40px;
+        width: 40px;
+        margin-right: 5px;
+
+        animation: none;
+        background: transparent;
+        border: 2px solid var(--glow-color);
+        border-radius: 4px;
+    }
+
+    .experimental-btn svg {
+        font-size: 1.5rem;
+        color: var(--text-color);
+    }
+
+    .experimental-btn:hover {
+        transform: none;
+    }
+
+    .experimental-btn.hide {
+        display: flex;
     }
 }

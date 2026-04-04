@@ -91,7 +91,7 @@ function App() {
           theme={theme}
           isMobile={isMobile}
           isOpen={isExperimentalOpen} 
-          onClick={() => setIsExperimentalOpen(true)}
+          onClick={() => setIsExperimentalOpen(prev => !prev)}
         />
         <WeatherCard
           weather={weatherInfo}

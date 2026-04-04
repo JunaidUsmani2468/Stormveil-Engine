@@ -1,11 +1,13 @@
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import SearchIcon from '@mui/icons-material/Search';
 import { useState } from 'react';
 import { getWeather } from '../../services/weatherService';
+import ExperimentalBtn from '../ExperimentalBtn/ExperimentalBtn';
 import './SearchBox.css';
 
-export default function SearchBox({ updateWeather }) {
+export default function SearchBox({ updateWeather, isMobile, isOpen, onClick }) {
     let [city, setCity] = useState('');
     const [error, setError] = useState(false);
 
@@ -36,6 +38,12 @@ export default function SearchBox({ updateWeather }) {
 
     return (
         <div className='searchBox'>
+            {isMobile && (
+                <ExperimentalBtn 
+                    isOpen={isOpen}
+                    onClick={onClick}
+                />
+            )}
             <form onSubmit={handleSubmit}>
                 <TextField
                     className= "searchBar"
@@ -47,13 +55,22 @@ export default function SearchBox({ updateWeather }) {
                     error={error}
                     helperText={error ? "Please enter a valid city name" : ""}
                 />
-                <Button
-                    variant="outlined"
-                    size='small'
-                    className='searchBtn'
-                    endIcon={<RocketLaunchIcon/>}
-                    type="submit"
-                >Launch</Button>
+                
+                {!isMobile ?
+                    <Button
+                        variant="outlined"
+                        size='small'
+                        className='searchBtn'
+                        endIcon={<RocketLaunchIcon/>}
+                        type="submit"
+                    >Launch</Button> :
+                    <button
+                        type='submit'
+                        className='mobileBtn'
+                    >
+                        <SearchIcon/>
+                    </button>
+                }
             </form>
         </div>
     )
