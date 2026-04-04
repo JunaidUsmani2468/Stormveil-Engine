@@ -96,3 +96,23 @@
 .option:not(:last-child) {
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
+
+@media (max-width: 850px) {
+  .PanelContainer {
+    width: 90%;
+    max-width: 400px;
+    right: auto;
+
+    left: 50%;
+    bottom: -800px;
+    transform: translate(-50%, 100%);
+  }
+
+  .PanelContainer.open {
+    right: auto;
+    
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%, 0);
+  }
+}
