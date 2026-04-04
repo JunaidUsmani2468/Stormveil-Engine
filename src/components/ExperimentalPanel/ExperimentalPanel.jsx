@@ -11,10 +11,10 @@ export default function ExperimentalPanel({ isOpen, onClose, onSelect }) {
         <div  className={`PanelContainer ${isOpen ? "open" : ""}`}>
             <Card className='ExperimentalPanel' sx={{ minWidth: 275 }}>
                 <CardContent>
-                    <Typography variant="h5" component="div">
+                    <Typography className='panelHeading' variant="h5" component="div">
                         <h3>Want to explore 🌍 every weather</h3>
                     </Typography>
-                    <Typography variant="body2">
+                    <Typography className='panelHeading' variant="body2">
                         Try our Experimental 🚀 Mode
                     </Typography>
                     <div className="options">

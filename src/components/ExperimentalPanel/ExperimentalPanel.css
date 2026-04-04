@@ -101,18 +101,31 @@
   .PanelContainer {
     width: 90%;
     max-width: 400px;
+
     right: auto;
+    bottom: auto;
 
     left: 50%;
-    bottom: -800px;
+    top: 500px;
+
     transform: translate(-50%, 100%);
   }
 
   .PanelContainer.open {
     right: auto;
+    bottom: auto;
     
     left: 50%;
-    bottom: 30px;
+    top: 115px;
+
     transform: translate(-50%, 0);
+  }
+
+  .panelHeading {
+    text-align: center;
+  }
+
+  .closeBtnContainer {
+    justify-content: center;
   }
 }
