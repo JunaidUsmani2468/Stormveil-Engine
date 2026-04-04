@@ -2,6 +2,7 @@ export const experimentalWeather = {
 
     cloudy: {
         cityName: "Mercury",
+        emoji: '☁️',
         country: "Silent Surface",
         temp: 30,
         feelsLike: 35,
@@ -24,6 +25,7 @@ export const experimentalWeather = {
 
     fog: {
         cityName: "Venus",
+        emoji: '🌫️',
         country: "Golden Horizon",
         temp: 28,
         feelsLike: 32,
@@ -46,6 +48,7 @@ export const experimentalWeather = {
 
     default: {
         cityName: "Earth",
+        emoji: '🌿',
         country: "Home",
         temp: 22,
         feelsLike: 24,
@@ -68,6 +71,7 @@ export const experimentalWeather = {
 
     hot: {
         cityName: "Mars",
+        emoji: '🔥',
         country: "Red Planet",
         temp: 35,
         feelsLike: 42,
@@ -90,6 +94,7 @@ export const experimentalWeather = {
 
     storm: {
         cityName: "Jupiter",
+        emoji: '🌩️',
         country: "Gas Giant",
         temp: -110,
         feelsLike: -150,
@@ -112,6 +117,7 @@ export const experimentalWeather = {
 
     rain: {
         cityName: "Saturn",
+        emoji: '🌧️',
         country: "Ring Planet",
         temp: -140,
         feelsLike: -170,
@@ -134,6 +140,7 @@ export const experimentalWeather = {
 
     snow: {
         cityName: "Uranus",
+        emoji: '❄️',
         country: "Ice Giant",
         temp: -210,
         feelsLike: -230,
@@ -156,6 +163,7 @@ export const experimentalWeather = {
 
     cold: {
         cityName: "Neptune",
+        emoji: '🧊',
         country: "Farthest Planet",
         temp: -200,
         feelsLike: -220,

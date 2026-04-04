@@ -21,7 +21,7 @@ export default function ExperimentalPanel({ isOpen, onClose, onSelect }) {
                         {Object.entries(experimentalWeather).map(([key, data]) => (
                             <div key={key} className="option">
                                 <div className="info">
-                                    <p>{data.cityName}</p>
+                                    <p>{`${data.cityName} ${data.emoji}`}</p>
                                     <small>{data.condition}</small>
                                 </div>
 
