@@ -14,7 +14,7 @@
 
   background-color: rgba(0, 0, 0, .3);
   border: 2px solid var(--glow-color);
-  border-radius: 3px;
+  border-radius: 5px;
   backdrop-filter: blur(6px);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -40,4 +40,20 @@
 .btn-container.active:hover {
   opacity: 0.8;
   transform: scale(1);
+}
+
+@media (max-width: 850px) {
+  .btn-container {
+    top: 10px;
+    left: 10px;
+    transform: scale(.8);
+  }
+
+  .btn-container.active {
+    transform: scale(.7);
+  }
+
+  .btn-container.active:hover {
+    transform: scale(.8);
+  }
 }

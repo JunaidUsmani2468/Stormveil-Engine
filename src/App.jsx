@@ -33,6 +33,13 @@ function App() {
   const [isSoundOn, setIsSoundOn] = useState(false);
   const [isExperimentalOpen, setIsExperimentalOpen] = useState(false);
   const [forcedTheme, setForcedTheme] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 850);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 850);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const isExperimentalMode = !!forcedTheme;
 
@@ -82,20 +89,30 @@ function App() {
         <SearchBox
           updateWeather={updateWeather}
           theme={theme}
+          isMobile={isMobile}
+          isOpen={isExperimentalOpen} 
+          onClick={() => setIsExperimentalOpen(true)}
         />
         <WeatherCard
           weather={weatherInfo}
           theme={theme}
           isExperimental={isExperimentalMode}
-        />
-        <SoundToggle
+          isMobile={isMobile}
           isSoundOn={isSoundOn}
           setIsSoundOn={setIsSoundOn}
         />
-        <ExperimentalBtn
-          isOpen={isExperimentalOpen} 
-          onClick={() => setIsExperimentalOpen(true)}
-        />
+        {!isMobile && (
+          <>
+            <SoundToggle
+              isSoundOn={isSoundOn}
+              setIsSoundOn={setIsSoundOn}
+            />
+            <ExperimentalBtn
+              isOpen={isExperimentalOpen} 
+              onClick={() => setIsExperimentalOpen(true)}
+            />
+          </>
+        )}
         <ExperimentalPanel
           isOpen={isExperimentalOpen}
           onClose={() => setIsExperimentalOpen(false)}

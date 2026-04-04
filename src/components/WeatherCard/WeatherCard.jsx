@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Compass from '../Compass/Compass';
 import { getSunProgress } from "../../utils/sunProgress";
 import SunProgress from "../SunProgress/SunProgress";
+import SoundToggle from '../SoundToggle/SoundToggle';
 import './WeatherCard.css';
 
 // ICONS
@@ -27,7 +28,14 @@ const weatherVisual = {
   default: { icon: <WbSunnyIcon />, text: "clear and pleasant" },
 };
 
-export default function WeatherCard({weather, theme, isExperimental }) {
+export default function WeatherCard({
+    weather,
+    theme,
+    isExperimental,
+    isMobile,
+    isSoundOn,
+    setIsSoundOn
+}) {
 
     let sunData;
 
@@ -72,6 +80,12 @@ export default function WeatherCard({weather, theme, isExperimental }) {
                             <p>{weather.condition}</p>
                         </div>
                         <p className='temp'>{weather.temp}&deg;C</p>
+                        {isMobile && (
+                            <SoundToggle 
+                                isSoundOn={isSoundOn}
+                                setIsSoundOn={setIsSoundOn}
+                            />
+                        )}
                         <p className='para'>
                             In {weather.cityName}, {weather.country !== '' ? `${weather.country}, ` : '' }
                             the weather is {weatherVisual[theme.icon].text} with {weather.condition}.
