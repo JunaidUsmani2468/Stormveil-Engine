@@ -1,10 +1,10 @@
 export const experimentalWeather = {
 
     cloudy: {
-        cityName: "Mercury ☁️",
+        cityName: "Mercury",
         country: "Silent Surface",
-        temp: 80,
-        feelsLike: 90,
+        temp: 30,
+        feelsLike: 35,
         humidity: 20,
         pressure: 0,
         condition: "overcast clouds",
@@ -12,18 +12,18 @@ export const experimentalWeather = {
         windSpeed: 4,
         windDeg: 60,
         windDir: "NE",
-        sunrise: { formatted: "--" },
-        sunset: { formatted: "--" },
+        sunrise: { formatted: "7:30" },
+        sunset: { formatted: "18:30" },
         cityTime: { formatted: "Quiet Horizon" },
         timezone: 0,
         isDay: false,
-        sunrisePercent: 10,
-        sunsetPercent: 90,
+        sunrisePercent: 23,
+        sunsetPercent: 78,
         currentPercent: 35,
     },
 
     fog: {
-        cityName: "Venus 🌫️",
+        cityName: "Venus",
         country: "Golden Horizon",
         temp: 28,
         feelsLike: 32,
@@ -45,7 +45,7 @@ export const experimentalWeather = {
     },
 
     default: {
-        cityName: "Earth 🌎",
+        cityName: "Earth",
         country: "Home",
         temp: 22,
         feelsLike: 24,
@@ -67,7 +67,7 @@ export const experimentalWeather = {
     },
 
     hot: {
-        cityName: "Mars 🔥",
+        cityName: "Mars",
         country: "Red Planet",
         temp: 35,
         feelsLike: 42,
@@ -89,7 +89,7 @@ export const experimentalWeather = {
     },
 
     storm: {
-        cityName: "Jupiter ⚡",
+        cityName: "Jupiter",
         country: "Gas Giant",
         temp: -110,
         feelsLike: -150,
@@ -111,7 +111,7 @@ export const experimentalWeather = {
     },
 
     rain: {
-        cityName: "Saturn 🌧️",
+        cityName: "Saturn",
         country: "Ring Planet",
         temp: -140,
         feelsLike: -170,
@@ -133,7 +133,7 @@ export const experimentalWeather = {
     },
 
     snow: {
-        cityName: "Uranus ❄️",
+        cityName: "Uranus",
         country: "Ice Giant",
         temp: -210,
         feelsLike: -230,
@@ -155,7 +155,7 @@ export const experimentalWeather = {
     },
 
     cold: {
-        cityName: "Neptune 🧊",
+        cityName: "Neptune",
         country: "Farthest Planet",
         temp: -200,
         feelsLike: -220,
