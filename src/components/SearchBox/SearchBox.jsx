@@ -1,6 +1,6 @@
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import SearchIcon from '@mui/icons-material/Search';
+import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import { useState } from 'react';
 import { getWeather } from '../../services/weatherService';
 import './SearchBox.css';
@@ -40,7 +40,7 @@ export default function SearchBox({ updateWeather }) {
                 <TextField
                     className= "searchBar"
                     id="city"
-                    label="City Name"
+                    label="LOCATE STORM"
                     size="small"
                     value={city}
                     onChange={handleChange}
@@ -51,9 +51,9 @@ export default function SearchBox({ updateWeather }) {
                     variant="outlined"
                     size='small'
                     className='searchBtn'
-                    endIcon={<SearchIcon/>}
+                    endIcon={<RocketLaunchIcon/>}
                     type="submit"
-                >search</Button>
+                >Launch</Button>
             </form>
         </div>
     )

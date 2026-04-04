@@ -30,6 +30,19 @@
   color: var(--text-color) !important;
 }
 
+.searchBar .MuiInputLabel-root {
+  font-size: 13px;
+  transform: translate(14px, 11px) scale(1);
+}
+
+.searchBar .MuiInputLabel-root.Mui-focused {
+  transform: translate(14px, -6px) scale(0.75);
+}
+
+.searchBar .MuiInputLabel-shrink {
+  transform: translate(14px, -6px) scale(0.75);
+}
+
 /* Border color */
 .searchBar .MuiOutlinedInput-root fieldset {
   border: 2px solid var(--glow-color);
