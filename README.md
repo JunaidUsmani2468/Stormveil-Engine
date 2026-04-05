@@ -22,6 +22,15 @@ Click here to experience Stormveil Engine in action 👉 [⛈️ Stormveil Engin
 
 <br>
 
+## 📸 Preview
+
+| ⚡ First Impression |
+|:--:|
+| <img src="./src/assets/preview/first-impression.png" width="100%" alt="Storm UI"> |
+| *Custom weather… full chaos mode activated 😈* |
+
+<br>
+
 ## ✨ Features
 
 - 🌍 Real-time weather data (OpenWeather API)
