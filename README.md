@@ -417,4 +417,50 @@ VITE_WEATHER_API_KEY=your_api_key_here
 npm run dev
 ```
 
-> ⚡ Built with code, creativity, and a little bit of chaos.
+<br>
+
+## 🤝 Contributing
+
+Contributions, ideas, and improvements are always welcome 💪🏻
+
+If you’d like to contribute:
+
+1. 🍴 Fork the repository  
+2. 🌿 Create a new branch (`git checkout -b feature/your-feature-name`)
+3. 🛠️ Make your changes
+4. ✅ Commit your work (`git commit -m "feat: your message"`)
+5. 🚀 Push to your branch (`git push origin feature/your-feature-name`)
+6. 🔁 Open a Pull Request
+
+<br>
+
+## 🙏 Acknowledgements
+
+A big thanks to **Shradha Khapra (Apna College)** for providing the initial guidance and foundation through her tutorials.
+
+This project began as a learning step — but quickly evolved into something much more through experimentation, iteration, and independent development 💪🏻
+
+Tutorial gave the base… I built the engine
+
+<br>
+
+## ⚖️ License
+
+MIT License © 2026 Junaid Usmani  
+
+For more details, check the [`LICENSE`](./LICENSE) file.
+
+<br>
+
+## ✨ Final Note
+
+Stormveil Engine is more than just a weather app.  
+It’s a combination of logic, design, experimentation, and persistence.
+
+Built with curiosity 💭  
+Refined with patience ⏳  
+Powered by chaos 😈  
+
+<h3 align="center">
+  Made with 💖 by <a href="https://www.linkedin.com/in/junaid-developer" target="_blank">Junaid</a>
+</h3>
