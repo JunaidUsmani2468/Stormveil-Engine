@@ -40,6 +40,34 @@ Click here to experience Stormveil Engine in action 👉 [⛈️ Stormveil Engin
 
 <br>
 
+## ⚡ Beyond the Tutorial
+
+Started with a basic tutorial… ended up building a full engine 😈  
+Not just upgrades — complete transformation.
+
+| Feature | What I Built | Impact |
+|:--|:--|:--|
+| 🧭 **Wind System** | Custom compass with smooth JS rotation | Real-time visual wind direction 🧠 |
+| 🌅 **Sun Progress** | Sunrise → current → sunset timeline | Makes time feel alive, not static ⏳ |
+| 🔊 **Sound Engine** | Weather-based ambient system (FFmpeg processed) | Adds immersive atmosphere 🎧 |
+| 🎨 **Theme Engine** | Dynamic UI based on weather conditions | Every city feels visually unique 🎨 |
+| 🧪 **Experimental Mode** | One-tap multi-weather exploration | Skip searching → instant experience 🚀 |
+| 🧱 **Architecture** | Structured React setup (hooks, utils, services) | Scalable & maintainable codebase ⚙️ |
+| ✨ **UI/UX** | Smooth transitions + responsive layout | Clean feel + satisfying experience 😌 |
+
+### 💬 Reality Check
+
+⏱️ Tutorial → *~1 day, 2 components*  
+🧠 Stormveil → *15+ days, multiple systems*
+
+Not a straight path.<br>
+Failed attempts. Broken logic. Rebuilds 🤕<br>
+But every failure shaped the final result.
+
+💀 It wasn’t clean. It wasn’t easy. But it was worth it.
+
+<br>
+
 ## ✨ Features
 
 - 🌍 Real-time weather data (OpenWeather API)
