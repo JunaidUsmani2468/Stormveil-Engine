@@ -81,9 +81,14 @@ function App() {
         }}
       >
         <h1>
-          Stormveil Engine 
-          <span className="app-icon">
-            <ThunderstormIcon />
+          <span className='h1Part-1'>
+            Stormveil
+          </span>
+          <span className='h2Part-2'>
+            Engine
+            <span className="app-icon">
+              <ThunderstormIcon />
+            </span>
           </span>
         </h1>
         <SearchBox
