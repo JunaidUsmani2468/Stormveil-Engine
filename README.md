@@ -264,7 +264,7 @@ Stormveil-engine
 
 ## 🧠 Application Workflow
 
-> Not magic — just structured flow and controlled chaos 😈
+> Not magic — just structured flow and controlled chaos 😎
 
 ```mermaid
 flowchart TD
@@ -325,7 +325,20 @@ G4 --> H
 
 > "Weather is not just data — it's an experience."
 
-Stormveil Engine focuses on turning raw weather data into a visual and interactive environment using a custom theme system powered by CSS variables and dynamic state handling.
+Stormveil Engine is built on a simple but powerful concept:  
+**don’t just display weather — translate it.**
+
+Instead of showing raw API data, the app transforms it into a dynamic environment using:
+
+- 🎨 CSS variable–driven theming
+- ⚡ State-based UI transformations
+- 🔊 Context-aware sound design
+
+Every weather condition becomes a **visual + interactive experience** —  
+where colors, motion, and sound work together to reflect the atmosphere of a place.
+
+💡 The goal isn’t accuracy alone… it’s **immersion**.<br>
+💀 Because plain numbers don’t tell stories… experiences do.
 
 <br>
 
