@@ -342,6 +342,52 @@ where colors, motion, and sound work together to reflect the atmosphere of a pla
 
 <br>
 
+## ⚔️ Challenges & Learnings
+
+Building Stormveil Engine wasn’t just about writing code —  
+it was about patience, failure, and persistence 💪🏻
+
+### 🔥 Challenges Faced
+
+| Challenge | Details |
+|:--|:--|
+| 🧠 **Designing Dynamic Theme Logic** | Mapping real-world weather into meaningful UI experiences wasn’t straightforward |
+| 🔄 **State & UI Synchronization** | Keeping data, theme, sound, and UI perfectly aligned required multiple rebuilds |
+| 🔊 **Sound System (The Toughest One 💀)** | Not just logic — finding the right copyright-free sounds was the real challenge. First attempts failed completely… almost felt impossible |
+| 🌅 **Time-Based Calculations** | Converting raw timestamps into a smooth and accurate sun progress system |
+| 🧪 **Experimental Mode Architecture** | Building a parallel flow (no API → instant UI) without breaking the main system |
+
+### 📌 What I Learned
+
+| Learning | Insight |
+|:--|:--|
+| ⏳ **Give time without guilt** | Good things take time. Rushing only breaks them |
+| 💘 **Work on what truly matters** | If it’s important to you, it deserves your time and focus |
+| 🔁 **Failure is part of the system** | Sometimes one more attempt turns multiple failures into something meaningful 🌩️ |
+| 🧪 **Not every experiment needs to succeed 😂** | Some ideas are meant to stay in experimental branches… and that’s okay |
+| 🌿 **Patience creates premium results** | The sound system proved it — first day nothing, second day everything 💪🏻 |
+
+### 🧠 Developer Growth
+
+| Growth Area | Transformation |
+|:--|:--|
+| 🔧 **Git & GitHub became real tools** | Not just deployment — but a safe space to experiment without fear |
+| 🌱 **Confidence to break things** | Branches allowed trying new ideas freely, knowing nothing is permanently lost |
+| ⚡ **Iteration mindset** | Build → break → fix → improve → repeat |
+
+### 💬 Reality
+
+There were failed attempts 🤕  
+Experiments that didn’t work  
+Ideas that had to be dropped  
+
+But every step moved the project forward.
+
+😈 Not built in one go… built through patience, failure, and persistence  
+💀 Clean UI… messy journey behind it
+
+<br>
+
 ## ⚙️ Setup & Installation
 
 ```bash
