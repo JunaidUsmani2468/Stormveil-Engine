@@ -33,10 +33,10 @@ Click here to experience Stormveil Engine in action 👉 [⛈️ Stormveil Engin
 
 > Designed on desktop. Refined for mobile. Crafted for vibes across every screen 😈
 
-| 🌫️ Mist Mode | 🌧️ Rain Mode |
-|:--:|:--:|
-| <img src="./src/assets/preview/fog.jpg" width="250"> | <img src="./src/assets/preview/rain.jpg" width="250"> |
-| *Foggy vibes with low visibility atmosphere* | *Deep green rain theme with immersive feel* |
+| ☁️ Cloudy Mode | 🌫️ Mist Mode | 🌧️ Rain Mode |
+|:--:|:--:|:--:|
+| <img src="./src/assets/preview/cloudy.jpg" width="250"> | <img src="./src/assets/preview/fog.jpg" width="250"> | <img src="./src/assets/preview/rain.jpg" width="250"> |
+| *Soft skies with calm golden tones* | *Foggy vibes with low visibility atmosphere* | *Deep green rain theme with immersive feel* |
 
 <br>
 
