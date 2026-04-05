@@ -152,6 +152,116 @@ Huge thanks to these platforms for making creativity accessible 💙
 
 <br>
 
+## 📁 Project Structure
+
+Stormveil Engine follows a modular and scalable React architecture  
+focused on separation of concerns and clean logic flow 💪🏻
+
+> Built with structure, not chaos… even if the UI says otherwise 😈
+
+```bash
+📦 stormveil-engine
+│
+├── 📂 public
+│   └── 🖼️ react.svg
+│
+├── 📂 src
+│   │
+│   ├── 📂 assets                      🎨 Static resources
+│   │   ├── 📂 images                  🖼️ Weather backgrounds
+│   │   │   ├── 🖼️ cloudy.avif
+│   │   │   ├── 🖼️ cold.jpg
+│   │   │   ├── 🖼️ default.avif
+│   │   │   ├── 🖼️ fog.jpg
+│   │   │   ├── 🖼️ hot.jpg
+│   │   │   ├── 🖼️ rain.jpg
+│   │   │   ├── 🖼️ snow.jpg
+│   │   │   └── 🖼️ storm.avif
+│   │   │
+│   │   ├── 📂 preview                 📸 README showcase
+│   │   │   ├── 🖼️ cloudy.jpg
+│   │   │   ├── 🖼️ fog.jpg
+│   │   │   ├── 🖼️ rain.jpg
+│   │   │   └── 🖼️ first-impression.png
+│   │   │
+│   │   └── 📂 sounds                  🔊 Ambient sound system
+│   │       ├── 📂 storm               ⚡ Storm sound pack
+│   │       │   ├── 🔊 lightning1_loud.mp3
+│   │       │   ├── 🔊 lightning2_loud.mp3
+│   │       │   ├── 🔊 lightning3_loud.mp3
+│   │       │   └── 🔊 storm_base.mp3
+│   │       │
+│   │       ├── 🔊 cloudy.mp3
+│   │       ├── 🔊 cold.mp3
+│   │       ├── 🔊 default.mp3
+│   │       ├── 🔊 fog.mp3
+│   │       ├── 🔊 hot.mp3
+│   │       ├── 🔊 rain.mp3
+│   │       └── 🔊 snow.mp3
+│   │
+│   ├── 📂 components                 🧩 UI Components
+│   │   ├── 📂 Compass
+│   │   │   ├── 🎨 Compass.css
+│   │   │   └── ⚛️ Compass.jsx
+│   │   │
+│   │   ├── 📂 ExperimentalBtn
+│   │   │   ├── 🎨 ExperimentalBtn.css
+│   │   │   └── ⚛️ ExperimentalBtn.jsx
+│   │   │
+│   │   ├── 📂 ExperimentalPanel
+│   │   │   ├── 🎨 ExperimentalPanel.css
+│   │   │   └── ⚛️ ExperimentalPanel.jsx
+│   │   │
+│   │   ├── 📂 SearchBox
+│   │   │   ├── 🎨 SearchBox.css
+│   │   │   └── ⚛️ SearchBox.jsx
+│   │   │
+│   │   ├── 📂 SoundToggle
+│   │   │   ├── 🎨 SoundToggle.css
+│   │   │   └── ⚛️ SoundToggle.jsx
+│   │   │
+│   │   ├── 📂 SunProgress
+│   │   │   ├── 🎨 SunProgress.css
+│   │   │   └── ⚛️ SunProgress.jsx
+│   │   │
+│   │   └── 📂 WeatherCard
+│   │       ├── 🎨 WeatherCard.css
+│   │       └── ⚛️ WeatherCard.jsx
+│   │
+│   ├── 📂 config                     ⚙️ Configuration
+│   │   └── 📜 weatherThemes.js
+│   │
+│   ├── 📂 data                       🧪 Experimental data
+│   │   └── 📜 experimentalWeather.js
+│   │
+│   ├── 📂 hooks                      🧠 Custom hooks
+│   │   └── 📜 useCompassAnimation.js
+│   │
+│   ├── 📂 services                   🌐 API layer
+│   │   └── 📜 weatherService.js
+│   │
+│   ├── 📂 utils                      🛠️ Utility functions
+│   │   ├── 📜 getWeatherTheme.js
+│   │   ├── 📜 soundManager.js
+│   │   └── 📜 sunProgress.js
+│   │
+│   ├── 🎨 App.css
+│   ├── ⚛️ App.jsx
+│   └── ⚛️ main.jsx                  🚀 Entry point
+│
+├── 🔐 .env
+├── 📜 .gitignore
+├── ⚙️ eslint.config.js
+├── 🌐 index.html
+├── ⚖️ LICENSE
+├── 📦 package.json
+├── 📦 package-lock.json
+├── ⚡ vite.config.js
+└── 📘 README.md
+```
+
+<br>
+
 ## 🧩 Key Concept
 
 > "Weather is not just data — it's an experience."
