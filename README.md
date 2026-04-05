@@ -147,8 +147,6 @@ Huge thanks to these platforms for making creativity accessible 💙
 
 ## ✨ Features
 
-> Not just features — a complete weather experience 🌩️
-
 | Feature | Experience |
 |:--|:--|
 | 🌍 Real-time Data | Live weather powered by OpenWeather API |
@@ -157,6 +155,8 @@ Huge thanks to these platforms for making creativity accessible 💙
 | 🔊 Sound System | Ambient weather audio for immersive feel 🎧 |
 | 🧭 Weather Details | Wind, direction, sunrise & sunset visualization |
 | 📱 Responsive Design | Built for desktop, refined for mobile 😈 |
+
+> Not just features — a complete weather experience 🌩️
 
 <br>
 
