@@ -147,12 +147,16 @@ Huge thanks to these platforms for making creativity accessible 💙
 
 ## ✨ Features
 
-- 🌍 Real-time weather data (OpenWeather API)
-- 🎨 Dynamic theme engine based on weather conditions
-- ⚡ Smooth UI transformations (storm, cloudy, snow, etc.)
-- 🔊 Ambient sound system (weather-based effects)
-- 🧭 Interactive weather details (wind, direction, sunrise/sunset)
-- 📱 Fully responsive design (mobile-first approach)
+> Not just features — a complete weather experience 🌩️
+
+| Feature | Experience |
+|:--|:--|
+| 🌍 Real-time Data | Live weather powered by OpenWeather API |
+| 🎨 Dynamic Themes | UI transforms based on weather conditions |
+| ⚡ Smooth Transitions | Fluid animations across storm, snow, rain & more |
+| 🔊 Sound System | Ambient weather audio for immersive feel 🎧 |
+| 🧭 Weather Details | Wind, direction, sunrise & sunset visualization |
+| 📱 Responsive Design | Built for desktop, refined for mobile 😈 |
 
 <br>
 
