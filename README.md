@@ -160,7 +160,7 @@ focused on separation of concerns and clean logic flow 💪🏻
 > Built with structure, not chaos… even if the UI says otherwise 😈
 
 ```bash
-📦 stormveil-engine
+Stormveil-engine
 │
 ├── 📂 public
 │   └── 🖼️ react.svg
