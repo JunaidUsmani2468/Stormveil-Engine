@@ -390,20 +390,30 @@ But every step moved the project forward.
 
 ## ⚙️ Setup & Installation
 
+**Want to run this project locally? Follow these simple steps.**
+
+**1. Clone the repository**
 ```bash
-# Clone the repository
 git clone https://github.com/YOUR_USERNAME/Stormveil-Engine.git
+```
 
-# Navigate to project
+**2. Navigate to project**
+```bash
 cd Stormveil-Engine
+```
 
-# Install dependencies
+**3. Install dependencies**
+```bash
 npm install
+```
 
-# Create a .env file in the root directory
+**4. Create a `.env` file in the root directory**
+```bash
 VITE_WEATHER_API_KEY=your_api_key_here
+```
 
-# Run development server
+**5. Run development server**
+```bash
 npm run dev
 ```
 
