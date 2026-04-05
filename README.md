@@ -23,6 +23,44 @@ Instead of just displaying weather information, it adapts the entire UI — incl
 
 ---
 
+## Meet 🤝 the Real MVPs
+
+Behind Stormveil Engine, there’s a powerful squad that made everything possible <br>
+Big respect to the powerful team that made Stormveil Engine feel alive 👇
+
+<br>
+
+### 🎵 Sound Department a.k.a. Vibe Engineers
+
+- 🎧 **Junaid Music Artist** — Chief Noise Controller & vibe engineer
+  > Contact: https://www.linkedin.com/in/junaid-developer
+- 🌐 **Pixabay** — For clean and free sound assets. “We got your sounds, no copyright drama.” 
+  > Contact: https://pixabay.com
+- 🔥 **Mixkit** — The real MVP. Honestly… this one carried the vibe 💀
+  > Contact: https://mixkit.co
+- ⚙️ **FFmpeg** — The silent legend that helped reshape and refine audio like a pro
+  > Contact: https://www.ffmpeg.org/
+
+<br>
+
+### 🖼️ Visual Department a.k.a. Atmosphere Designers
+
+- 📸 **Unsplash** — Turning weather into cinematic wallpapers since forever ✨<br>
+  Carefully selected and blended to match real-time weather moods
+  > Contact: https://unsplash.com
+
+<br>
+
+### 💬 Special Note
+
+All resources used are free and belong to their amazing creators.  
+I just combined them with a little bit of logic… and a lot of chaos 😈<br>
+Huge thanks to these platforms for making creativity accessible 💙
+
+<br>
+
+---
+
 ## 🛠️ Tech Stack
 
 - React (Vite)
@@ -59,3 +97,5 @@ VITE_WEATHER_API_KEY=your_api_key_here
 # Run development server
 npm run dev
 ```
+
+> ⚡ Built with code, creativity, and a little bit of chaos.
