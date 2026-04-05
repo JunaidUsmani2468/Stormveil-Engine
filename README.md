@@ -68,7 +68,7 @@ But every failure shaped the final result.
 
 <br>
 
-## ✨ AI-Powered Workflow
+## 🤖 AI-Powered Workflow
 
 Built with the help of AI — but not by blindly accepting everything.
 
@@ -134,12 +134,12 @@ Huge thanks to these platforms for making creativity accessible 💙
 
 | Layer | Powering It |
 |:--|:--|
-| ⚛️ Core | React (Vite), Material UI |
-| 🎨 UI Engine | Custom CSS, Dynamic Theme System |
-| 🌍 Data | OpenWeather API |
-| 🔊 Sound System | FFmpeg, Ambient Audio Logic |
-| 🧠 Brain | Hooks, Utilities, Custom Logic |
-| 🚀 Launchpad | Vercel |
+| ⚛️ Core | ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-Fast-646CFF?logo=vite&logoColor=white) ![MUI](https://img.shields.io/badge/MUI-UI-007FFF?logo=mui&logoColor=white) |
+| 🎨 UI Engine | ![CSS](https://img.shields.io/badge/CSS-Custom-1572B6?logo=css3&logoColor=white) ![Theme](https://img.shields.io/badge/System-Dynamic%20Theme-purple) |
+| 🌍 Data | ![OpenWeather](https://img.shields.io/badge/API-OpenWeather-FF7E00) |
+| 🔊 Sound System | ![FFmpeg](https://img.shields.io/badge/FFmpeg-Audio-007808?logo=ffmpeg&logoColor=white) ![Sound](https://img.shields.io/badge/System-Ambient%20Sound-blue) |
+| 🧠 Brain | ![Logic](https://img.shields.io/badge/Logic-Custom-orange) ![Hooks](https://img.shields.io/badge/Hooks-React-informational) |
+| 🚀 Launchpad | ![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white) |
 
 > More than tools — this project is powered by custom logic 🧠, iteration ♻️, and a lot of experimentation 🥼🧪
 
