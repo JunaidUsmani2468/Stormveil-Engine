@@ -4,13 +4,23 @@ Stormveil Engine is a dynamic weather web application that transforms real-time 
 
 Instead of just displaying weather information, it adapts the entire UI — including background, gradients, colors, and effects — based on live conditions, creating a unique atmosphere for every location.
 
----
+This is my first React-based project — fully responsive across devices — and also my first time designing and integrating a dynamic ambient sound system from scratch, pushing both UI and experience beyond just visuals.
+
+> *⭐ If this project helped or inspired you, consider giving it a star — it really motivates me to keep building!*
+
+<br>
 
 ## 🚀 Live Demo
 
-👉 "link here"
+Click here to experience Stormveil Engine in action 👉 [⛈️ Stormveil Engine 🌩️]
 
----
+💡 **Pro Tip:** Skip the search — trigger Experimental Mode and explore the full experience in one tap 🚀
+
+🎧 **Bonus:** Turn on sound and explore the atmosphere — each weather has its own vibe 😈
+
+⚡ Not just weather… it’s an experience.
+
+<br>
 
 ## ✨ Features
 
@@ -21,7 +31,7 @@ Instead of just displaying weather information, it adapts the entire UI — incl
 - 🧭 Interactive weather details (wind, direction, sunrise/sunset)
 - 📱 Fully responsive design (mobile-first approach)
 
----
+<br>
 
 ## 🤝 Meet the Real MVPs
 
@@ -66,8 +76,6 @@ Huge thanks to these platforms for making creativity accessible 💙
 
 <br>
 
----
-
 ## 🛠️ Tech Stack
 
 - React (Vite)
@@ -76,7 +84,7 @@ Huge thanks to these platforms for making creativity accessible 💙
 - OpenWeather API
 - Vercel (Deployment)
 
----
+<br>
 
 ## 🧩 Key Concept
 
@@ -84,7 +92,7 @@ Huge thanks to these platforms for making creativity accessible 💙
 
 Stormveil Engine focuses on turning raw weather data into a visual and interactive environment using a custom theme system powered by CSS variables and dynamic state handling.
 
----
+<br>
 
 ## ⚙️ Setup & Installation
 
