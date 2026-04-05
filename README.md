@@ -262,6 +262,65 @@ Stormveil-engine
 
 <br>
 
+## 🧠 Application Workflow
+
+> Not magic — just structured flow and controlled chaos 😈
+
+```mermaid
+flowchart TD
+
+%% --- INPUT LAYER ---
+A[🔍 User Input]
+A1[🔎 Search City]
+A2[🧪 Experimental Mode]
+
+A --> A1
+A --> A2
+
+%% --- SEARCH FLOW (API) ---
+A1 --> B[📦 SearchBox]
+B --> C[🌐 weatherService.js]
+C --> D[📊 Raw Weather Data]
+
+%% --- EXPERIMENTAL FLOW (NO API) ---
+A2 --> X[🧪 ExperimentalBtn]
+X --> Y[⚙️ ExperimentalPanel]
+Y --> Z[🧪 Custom Weather Data]
+
+%% --- MERGE DATA ---
+D --> E[🧠 Utils Layer]
+Z --> E
+
+%% --- UTILS ---
+E --> E1[⚙️ getWeatherTheme]
+E --> E2[🔊 soundManager]
+E --> E3[🌅 sunProgress]
+
+%% --- CONFIG ---
+E1 --> F[🎨 weatherThemes]
+
+%% --- COMPONENTS ---
+F --> G
+E2 --> G
+E3 --> G
+
+G[🧩 UI Layer]
+
+G --> G1[🌦️ WeatherCard]
+G --> G2[🧭 Compass]
+G --> G3[🌅 SunProgress]
+G --> G4[🔊 SoundToggle]
+
+%% --- FINAL EXPERIENCE ---
+G1 --> H[✨ Final Experience]
+G2 --> H
+G3 --> H
+G4 --> H
+```
+> ⚡ Experimental mode bypasses API for instant rendering
+
+<br>
+
 ## 🧩 Key Concept
 
 > "Weather is not just data — it's an experience."
