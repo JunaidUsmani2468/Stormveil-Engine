@@ -23,38 +23,45 @@ Instead of just displaying weather information, it adapts the entire UI — incl
 
 ---
 
-## Meet 🤝 the Real MVPs
+## 🤝 Meet the Real MVPs
 
-Behind Stormveil Engine, there’s a powerful squad that made everything possible <br>
-Big respect to the powerful team that made Stormveil Engine feel alive 👇
-
-<br>
-
-### 🎵 Sound Department a.k.a. Vibe Engineers
-
-- 🎧 **Junaid Music Artist** — Chief Noise Controller & vibe engineer
-  > Contact: https://www.linkedin.com/in/junaid-developer
-- 🌐 **Pixabay** — For clean and free sound assets. “We got your sounds, no copyright drama.” 
-  > Contact: https://pixabay.com
-- 🔥 **Mixkit** — The real MVP. Honestly… this one carried the vibe 💀
-  > Contact: https://mixkit.co
-- ⚙️ **FFmpeg** — The silent legend that helped reshape and refine audio like a pro
-  > Contact: https://www.ffmpeg.org/
+Behind Stormveil Engine is a powerful squad that made everything possible.  
+Big respect to the legends who brought this experience to life 👇
 
 <br>
 
-### 🖼️ Visual Department a.k.a. Atmosphere Designers
+### 🎵 Sound Department (a.k.a. Vibe Engineers)
 
-- 📸 **Unsplash** — Turning weather into cinematic wallpapers since forever ✨<br>
-  Carefully selected and blended to match real-time weather moods
-  > Contact: https://unsplash.com
+- 🎧 **Junaid Music Artist** — Chief Noise Controller & Vibe Engineer  
+  > 🔗 Visit: https://www.linkedin.com/in/junaid-developer  
+
+- 🌐 **Pixabay** — Clean and free sound assets  
+  “We got your sounds, no copyright drama.”  
+  > 🔗 Visit: https://pixabay.com  
+
+- 🔥 **Mixkit** — The real MVP  
+  Honestly… this one carried the vibe 💀  
+  > 🔗 Visit: https://mixkit.co  
+
+- ⚙️ **FFmpeg** — The silent legend  
+  Reshaped and refined audio like a pro  
+  > 🔗 Visit: https://www.ffmpeg.org/
+
+<br>
+
+### 🖼️ Visual Department (a.k.a. Atmosphere Designers)
+
+- 📸 **Unsplash** — Turning weather into cinematic wallpapers ✨  
+  Carefully selected and blended to match real-time weather moods  
+  > 🔗 Visit: https://unsplash.com  
 
 <br>
 
 ### 💬 Special Note
 
-All resources used are free and belong to their amazing creators.  
-I just combined them with a little bit of logic… and a lot of chaos 😈<br>
+All resources used are free and belong to their respective creators.  
+I just combined them with a little bit of logic… and a lot of chaos 😈  
+
 Huge thanks to these platforms for making creativity accessible 💙
 
 <br>
