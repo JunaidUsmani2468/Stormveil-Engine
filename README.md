@@ -1,29 +1,61 @@
-# Stormveil Engine ⛈️
+# 🌩️ Stormveil Engine
 
-Stormveil Engine ⛈️ is a dynamic weather web app that transforms real-time weather data into immersive visual experiences.
+Stormveil Engine is a dynamic weather web application that transforms real-time weather data into immersive visual experiences.
 
-It adapts background, gradients, and UI elements based on live conditions, creating a unique atmosphere for every city.
+Instead of just displaying weather information, it adapts the entire UI — including background, gradients, colors, and effects — based on live conditions, creating a unique atmosphere for every location.
 
-Built with React, Material UI, and OpenWeather API.
+---
 
-## 🚧 Work in Progress 🚧
+## 🚀 Live Demo
 
-This project is currently under development.
-New features are being added, improved, and sometimes… unexpectedly broken 😅
+👉 "link here"
 
-If something looks strange, don’t worry —
-👉 it’s just part of the building phase.
+---
 
-Stay tuned as Stormveil Engine evolves 💪🏻
+## ✨ Features
 
-## Tech Stack
+- 🌍 Real-time weather data (OpenWeather API)
+- 🎨 Dynamic theme engine based on weather conditions
+- ⚡ Smooth UI transformations (storm, cloudy, snow, etc.)
+- 🔊 Ambient sound system (weather-based effects)
+- 🧭 Interactive weather details (wind, direction, sunrise/sunset)
+- 📱 Fully responsive design (mobile-first approach)
 
-- React
+---
+
+## 🛠️ Tech Stack
+
+- React (Vite)
 - Material UI
+- CSS (custom theme system)
 - OpenWeather API
+- Vercel (Deployment)
 
-## Features
+---
 
-- Dynamic theme system
-- Weather-based UI transformation
-- Real-time data fetching
+## 🧩 Key Concept
+
+> "Weather is not just data — it's an experience."
+
+Stormveil Engine focuses on turning raw weather data into a visual and interactive environment using a custom theme system powered by CSS variables and dynamic state handling.
+
+---
+
+## ⚙️ Setup & Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/Stormveil-Engine.git
+
+# Navigate to project
+cd Stormveil-Engine
+
+# Install dependencies
+npm install
+
+# Create a .env file in the root directory
+VITE_WEATHER_API_KEY=your_api_key_here
+
+# Run development server
+npm run dev
+```
