@@ -100,26 +100,18 @@ Big respect to the legends who brought this experience to life 👇
 
 ### 🎵 Sound Department (a.k.a. Vibe Engineers)
 
-- 🎧 **Junaid Music Artist** — Chief Noise Controller & Vibe Engineer  
-  > 🔗 Visit: https://www.linkedin.com/in/junaid-developer  
-
-- 🌐 **Pixabay** — Clean and free sound assets  
-  “We got your sounds, no copyright drama.”  
-  > 🔗 Visit: https://pixabay.com  
-
-- 🔥 **Mixkit** — The real MVP  
-  Honestly… this one carried the vibe 💀  
-  > 🔗 Visit: https://mixkit.co  
-
-- ⚙️ **FFmpeg** — The silent legend  
-  Reshaped and refined audio like a pro  
-  > 🔗 Visit: https://www.ffmpeg.org/
+| Name | Contribution | Link |
+|:--|:--|:--|
+| 🎧 **Junaid Music Artist** | Chief Noise Controller & Vibe Engineer 😎 | 🔗 [Junaid-Artist](https://www.linkedin.com/in/junaid-developer) |
+| 🌐 **Pixabay** | Clean, copyright-free sound assets | 🔗 [Pixabay](https://pixabay.com) |
+| 🔥 **Mixkit** | The real MVP… carried the vibe 💀 | 🔗 [Mixkit](https://mixkit.co) |
+| ⚙️ **FFmpeg** | Audio processing & refinement tool | 🔗 [FFmpeg](https://www.ffmpeg.org/) |
 
 ### 🖼️ Visual Department (a.k.a. Atmosphere Designers)
 
-- 📸 **Unsplash** — Turning weather into cinematic wallpapers ✨  
-  Carefully selected and blended to match real-time weather moods  
-  > 🔗 Visit: https://unsplash.com  
+| Name | Contribution | Link |
+|:--|:--|:--|
+| 📸 **Unsplash** | Cinematic images powering every theme ✨ | 🔗 [Unsplash](https://unsplash.com) |
 
 ### 💬 Special Note
 
