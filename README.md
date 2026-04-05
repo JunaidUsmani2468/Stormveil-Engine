@@ -68,6 +68,31 @@ But every failure shaped the final result.
 
 <br>
 
+## ✨ AI-Powered Workflow
+
+Built with the help of AI — but not by blindly accepting everything.
+
+This project was shaped through continuous iteration:<br>
+prompt → result → refine → reject → rebuild 💪🏻
+
+### ⚙️ How I Used AI
+
+- Provided detailed context 🧠 instead of vague prompts  
+- Iterated multiple times 🔁 to reach the right solution  
+- Rejected ❌ outputs that didn’t match the vision  
+- Refined and customized 🛠️ instead of copy-pasting  
+
+### 📌 Key Learnings
+
+- AI is powerful — but **only as good as the input you give**
+- First answer is rarely the best one
+- Real value comes from **iteration, not generation**
+- You don’t follow AI… you **guide it**
+
+**Not just using AI… learning how to think with it**
+
+<br>
+
 ## ✨ Features
 
 - 🌍 Real-time weather data (OpenWeather API)
