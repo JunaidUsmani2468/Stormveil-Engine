@@ -8,7 +8,7 @@ Instead of just displaying weather information, it adapts the entire UI — incl
 
 ## 🚀 Live Demo
 
-👉 "link here"
+👉 "link here "
 
 ---
 
