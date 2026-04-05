@@ -38,8 +38,6 @@ Click here to experience Stormveil Engine in action 👉 [⛈️ Stormveil Engin
 Behind Stormveil Engine is a powerful squad that made everything possible.  
 Big respect to the legends who brought this experience to life 👇
 
-<br>
-
 ### 🎵 Sound Department (a.k.a. Vibe Engineers)
 
 - 🎧 **Junaid Music Artist** — Chief Noise Controller & Vibe Engineer  
@@ -57,15 +55,11 @@ Big respect to the legends who brought this experience to life 👇
   Reshaped and refined audio like a pro  
   > 🔗 Visit: https://www.ffmpeg.org/
 
-<br>
-
 ### 🖼️ Visual Department (a.k.a. Atmosphere Designers)
 
 - 📸 **Unsplash** — Turning weather into cinematic wallpapers ✨  
   Carefully selected and blended to match real-time weather moods  
   > 🔗 Visit: https://unsplash.com  
-
-<br>
 
 ### 💬 Special Note
 
