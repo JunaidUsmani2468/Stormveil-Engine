@@ -93,17 +93,6 @@ prompt → result → refine → reject → rebuild 💪🏻
 
 <br>
 
-## ✨ Features
-
-- 🌍 Real-time weather data (OpenWeather API)
-- 🎨 Dynamic theme engine based on weather conditions
-- ⚡ Smooth UI transformations (storm, cloudy, snow, etc.)
-- 🔊 Ambient sound system (weather-based effects)
-- 🧭 Interactive weather details (wind, direction, sunrise/sunset)
-- 📱 Fully responsive design (mobile-first approach)
-
-<br>
-
 ## 🤝 Meet the Real MVPs
 
 Behind Stormveil Engine is a powerful squad that made everything possible.  
@@ -143,11 +132,27 @@ Huge thanks to these platforms for making creativity accessible 💙
 
 ## 🛠️ Tech Stack
 
-- React (Vite)
-- Material UI
-- CSS (custom theme system)
-- OpenWeather API
-- Vercel (Deployment)
+| Layer | Powering It |
+|:--|:--|
+| ⚛️ Core | React (Vite), Material UI |
+| 🎨 UI Engine | Custom CSS, Dynamic Theme System |
+| 🌍 Data | OpenWeather API |
+| 🔊 Sound System | FFmpeg, Ambient Audio Logic |
+| 🧠 Brain | Hooks, Utilities, Custom Logic |
+| 🚀 Launchpad | Vercel |
+
+> More than tools — this project is powered by custom logic 🧠, iteration ♻️, and a lot of experimentation 🥼🧪
+
+<br>
+
+## ✨ Features
+
+- 🌍 Real-time weather data (OpenWeather API)
+- 🎨 Dynamic theme engine based on weather conditions
+- ⚡ Smooth UI transformations (storm, cloudy, snow, etc.)
+- 🔊 Ambient sound system (weather-based effects)
+- 🧭 Interactive weather details (wind, direction, sunrise/sunset)
+- 📱 Fully responsive design (mobile-first approach)
 
 <br>
 
