@@ -27,7 +27,7 @@ Click here to experience Stormveil Engine in action 👉 [[⛈️ Stormveil Engi
 Want to see how Stormveil Engine actually feels in action? 😉  
 This video covers the full experience — UI, themes, sound, and experimental mode.
 
-Watch it here 👉 [[ 🎥 Stormveil Walkthrough 🚀 ]]()
+Watch it here 👉 [[ 🎥 Stormveil Walkthrough 🚀 ]]
 
 > ✨ Built to show the experience, not just the code — feel it in minutes.
 
