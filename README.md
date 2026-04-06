@@ -133,8 +133,6 @@ Huge thanks to these platforms for making creativity accessible 💙
 | 🧠 Brain | ![Logic](https://img.shields.io/badge/Logic-Custom-orange) ![Hooks](https://img.shields.io/badge/Hooks-React-informational) |
 | 🚀 Launchpad | ![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white) |
 
-> More than tools — this project is powered by custom logic 🧠, iteration ♻️, and a lot of experimentation 🥼🧪
-
 <br>
 
 ## ✨ Features
@@ -147,8 +145,6 @@ Huge thanks to these platforms for making creativity accessible 💙
 | 🔊 Sound System | Ambient weather audio for immersive feel 🎧 |
 | 🧭 Weather Details | Wind, direction, sunrise & sunset visualization |
 | 📱 Responsive Design | Built for desktop, refined for mobile 😈 |
-
-> Not just features — a complete weather experience 🌩️
 
 <br>
 
@@ -264,7 +260,8 @@ Stormveil-engine
 
 ## 🧠 Application Workflow
 
-> Not magic — just structured flow and controlled chaos 😎
+Not magic — just structured flow and controlled chaos 😎
+> ⚡ Experimental mode bypasses API for instant rendering
 
 ```mermaid
 flowchart TD
@@ -317,16 +314,14 @@ G2 --> H
 G3 --> H
 G4 --> H
 ```
-> ⚡ Experimental mode bypasses API for instant rendering
 
 <br>
 
 ## 🧩 Key Concept
 
-> "Weather is not just data — it's an experience."
-
 Stormveil Engine is built on a simple but powerful concept:  
 **don’t just display weather — translate it.**
+> "Weather is not just data — it's an experience."
 
 Instead of showing raw API data, the app transforms it into a dynamic environment using:
 
