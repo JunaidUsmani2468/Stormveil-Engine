@@ -51,17 +51,6 @@ Not just upgrades — complete transformation.
 | 🧱 **Architecture** | Structured React setup (hooks, utils, services) | Scalable & maintainable codebase ⚙️ |
 | ✨ **UI/UX** | Smooth transitions + responsive layout | Clean feel + satisfying experience 😌 |
 
-### 💬 Reality Check
-
-⏱️ Tutorial → *~1 day, 2 components*  
-🧠 Stormveil → *15+ days, multiple systems*
-
-Not a straight path.<br>
-Failed attempts. Broken logic. Rebuilds 🤕<br>
-But every failure shaped the final result.
-
-💀 It wasn’t clean. It wasn’t easy. But it was worth it.
-
 <br>
 
 ## 🤖 AI-Powered Workflow
@@ -360,17 +349,6 @@ it was about patience, failure, and persistence 💪🏻
 | 🌱 **Confidence to break things** | Branches allowed trying new ideas freely, knowing nothing is permanently lost |
 | ⚡ **Iteration mindset** | Build → break → fix → improve → repeat |
 
-### 💬 Reality
-
-There were failed attempts 🤕  
-Experiments that didn’t work  
-Ideas that had to be dropped  
-
-But every step moved the project forward.
-
-😈 Not built in one go… built through patience, failure, and persistence  
-💀 Clean UI… messy journey behind it
-
 <br>
 
 ## ⚙️ Setup & Installation
@@ -442,9 +420,19 @@ For more details, check the [`LICENSE`](./LICENSE) file.
 Stormveil Engine is more than just a weather app.  
 It’s a combination of logic, design, experimentation, and persistence.
 
-Built with curiosity 💭  
-Refined with patience ⏳  
-Powered by chaos 😈  
+| Stage | Insight |
+|:--|:--|
+| 💭 Vision | More than a weather app — a blend of logic, design, and experience |
+| ⚡ Start | Began as a simple tutorial (~1 day, 2 components) |
+| 🧠 Growth | Evolved into a full system (18+ days, multiple features) |
+| 🤕 Reality | Failed attempts, broken logic, rebuilds, dropped ideas |
+| 🔁 Outcome | Every step improved the final result |
+
+😈 Built with curiosity  
+⏳ Refined with patience  
+💀 Clean UI… messy journey behind it
+
+<br>
 
 <h3 align="center">
   Made with 💖 by <a href="https://www.linkedin.com/in/junaid-developer" target="_blank">Junaid</a>
