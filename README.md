@@ -124,6 +124,7 @@ Huge thanks to these platforms for making creativity accessible 💙
 | 🌍 Data | ![OpenWeather](https://img.shields.io/badge/API-OpenWeather-FF7E00) |
 | 🔊 Sound System | ![FFmpeg](https://img.shields.io/badge/FFmpeg-Audio-007808?logo=ffmpeg&logoColor=white) ![Sound](https://img.shields.io/badge/System-Ambient%20Sound-blue) |
 | 🧠 Brain | ![Logic](https://img.shields.io/badge/Logic-Custom-orange) ![Hooks](https://img.shields.io/badge/Hooks-React-informational) |
+| 🔧 Version Control | ![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-Code%20Hosting-181717?logo=github&logoColor=white) |
 | 🚀 Launchpad | ![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white) |
 
 <br>
