@@ -431,7 +431,7 @@ If you’d like to contribute:
 
 ## 🙏 Acknowledgements
 
-A big thanks to **Shradha Khapra (Apna College)** for providing the initial guidance and foundation through her tutorials.
+A big thanks to **[Shradha Khapra](https://www.linkedin.com/in/shradha-khapra) ([Apna College](https://www.apnacollege.in/))** for providing the initial guidance and foundation through her tutorials.
 
 This project began as a learning step — but quickly evolved into something much more through experimentation, iteration, and independent development 💪🏻
 
