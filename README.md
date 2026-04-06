@@ -12,13 +12,24 @@ This is my first React-based project — fully responsive across devices — and
 
 ## 🚀 Live Demo
 
-Click here to experience Stormveil Engine in action 👉 [⛈️ Stormveil Engine 🌩️]
+Click here to experience Stormveil Engine in action 👉 [[⛈️ Stormveil Engine 🌩️]](https://stormveil-engine.vercel.app/)
 
 > 💡 **Pro Tip:** Skip the search — trigger Experimental Mode and explore the full experience in one tap 🚀
 > 
 > 🎧 **Bonus:** Turn on sound and explore the atmosphere — each weather has its own vibe 😈
 
 ⚡ Not just weather… it’s an experience.
+
+<br>
+
+## 🎬 Video Walkthrough
+
+Want to see how Stormveil Engine actually feels in action? 😉  
+This video covers the full experience — UI, themes, sound, and experimental mode.
+
+Watch it here 👉 [[ 🎥 Stormveil Walkthrough 🚀 ]]()
+
+> ✨ Built to show the experience, not just the code — feel it in minutes.
 
 <br>
 
