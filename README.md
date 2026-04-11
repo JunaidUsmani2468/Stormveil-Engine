@@ -2,8 +2,6 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,30,24&height=200&section=header&text=Stormveil%20Engine%20⚡&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Real-Time%20Weather.%20Reimagined.&descAlignY=58&descSize=18" />
 </div>
 
-# 🌩️ Stormveil Engine
-
 Stormveil Engine is a dynamic weather web application that transforms real-time weather data into immersive visual experiences.
 
 Instead of just displaying weather information, it adapts the entire UI — including background, gradients, colors, and effects — based on live conditions, creating a unique atmosphere for every location.
