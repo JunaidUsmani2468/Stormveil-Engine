@@ -368,7 +368,7 @@ it was about patience, failure, and persistence 💪🏻
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/Stormveil-Engine.git
+git clone https://github.com/JunaidUsmani2468/Stormveil-Engine.git
 ```
 
 **2. Navigate to project**
